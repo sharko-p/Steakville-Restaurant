@@ -12,9 +12,7 @@
 @import "normalize";
 @import "fonts";
 
-// body {
-//     max-width: 1190px;
-// }
+// _________________________________________________ section 1
 body {
     max-width: 1190px;
     // font-family: sans-serif;
@@ -50,13 +48,12 @@ body {
     word-spacing: -3px;
     padding-left: 5px;
 }
-
 .social {
     height: 13px;
     padding-left: 5px; 
    }
 .social svg {
-width: 13px;
+    width: 13px;
 }
 .twitter {
     height: 13px; 
@@ -69,7 +66,7 @@ width: 13px;
     cursor: pointer;
 }
 
-                                                //    header
+  // ________________________________________   header
 .header {
     height: 5vh;  
    
@@ -78,45 +75,41 @@ width: 13px;
     position: relative;
     display: flex;
     justify-content: space-between;
-    background-color: black;  
+    background-color: black;
     // position: sticky;
     // top: 0;
-    // z-index: 10000;
-   }
+    // z-index: 100;
+}
 .logotip img {
     position: absolute;
     top: 25px;
-        left: 12px;
+    left: 12px;
 }
 .wrapper .navigation-container {
     display: flex;
     align-items: center;
     padding-top: 19px;
+    text-decoration: none; 
 }
-
 .navigation ul {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 .navigation li {
-    margin-left: 41px;
-    text-decoration: none;
-
+    margin-left: 41px; 
 }
 .navigation a {
     font-family: "Montserrat-regular", sans-serif;
     text-transform: uppercase;
     color: white;
-    text-decoration: none;
 }
-
 .button-menu {
     display: flex;
     margin-left: 20px;
     background-color: transparent;
     border: none;    
 }
-
 .main-content {
     display: flex;
     flex-direction: column;
@@ -130,9 +123,9 @@ width: 13px;
     background-attachment: fixed;
 }
 .main-content h2 {
-   font-family: "WildYouth", sans-serif;
-   font-size: 50px;
-   font-weight: 500;
+    font-family: "WildYouth", sans-serif;
+    font-size: 50px;
+    font-weight: 500;
     letter-spacing: 3px;
     word-spacing: 8px;
     color: #e4bb7a;    
@@ -179,7 +172,7 @@ width: 13px;
    bottom: 9%;
     left: 41%;
 }
-                                                // section 2
+//    ____________________________________ section 2
 
  .space {
   text-align: center;
@@ -188,10 +181,7 @@ width: 13px;
   padding-bottom: 30px;
   background-color: white;
   }
-
-
-
-.space .wrapper {
+.slider-wrapper {
     position: relative;
     height: 756px;
     margin-top: 47px;
@@ -229,7 +219,6 @@ width: 13px;
     height: 3px;
     margin-bottom: -5px;
 }
-
 .gallery__title2 {
     font-family: Montserrat-bold,sans-serif;
     font-size: 38px;
@@ -239,7 +228,6 @@ width: 13px;
     color: #fff;
     height: 7px;
     margin-bottom: 5px;
-    
 }
 .gallery__text {
     font-size: 15px;
@@ -261,44 +249,42 @@ width: 13px;
     font-weight: 700;
     border: none;
     outline-color: #121212;
-    
 }
-
-  .image-slider .swiper-button-prev::after,
-  .image-slider .swiper-button-next::after {
-      color:#fff;
-      font-size: 40px;
-  }
-  .image-slider .swiper-pagination {
+.image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-next::after {
+    color:#fff;
+    font-size: 40px;
+}
+.image-slider .swiper-pagination {
     position: absolute;
     bottom: 7%;
-  }
-  .image-slider .swiper-pagination-bullet {
-      width: 7px;
-      height: 7px;
-     background-color: #3f3f3f;
-      border: 3px solid #e4bb7a;
-      border-radius: 50%;
-      cursor: pointer;
-      margin: 0 18px;        
+}
+.image-slider .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    background-color: #3f3f3f;
+    border: 3px solid #e4bb7a;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 18px;        
   }
                             //  <!-- section 3 -->
 
- .organic {
+ .organic-wrapper {
     background-color: #e0e0e0;
-    height: 100vh;
+    height: 79vh;
     position: relative;
  }
- .organic__social {
-    position: absolute;
-    top: 40%;
-    left: 2%;
- }
+//  .organic__social {
+//     position: absolute;
+//     top: 40%;
+//     left: 2%;
+//  }
  .organic__icon {
     border: 1px solid #000;
     border-radius: 50%;
     margin-bottom: 20px;
-    padding: 5px;//     
+    padding: 5px;     
  }
  .organic__icon a {
     color: #000;
@@ -306,7 +292,7 @@ width: 13px;
  .organic__icon i {
     font-size: 15px;
 }
-.organic__wrapper {
+.organic_food {
     width: 735px;
     position: absolute;
     top: 28%;
@@ -315,8 +301,7 @@ width: 13px;
 .organic__info {
     background-color: #fff;
     text-align: center;
-    width: 735px;
-    margin-left: 9px;
+    padding: 50px 0 20px;
 }
 .organic__title {
     font-size: 36px;

@@ -514,6 +514,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 19px;
+  text-decoration: none;
 }
 
 .navigation ul {
@@ -523,18 +524,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
 }
 
 .navigation li {
   margin-left: 41px;
-  text-decoration: none;
 }
 
 .navigation a {
   font-family: "Montserrat-regular", sans-serif;
   text-transform: uppercase;
   color: white;
-  text-decoration: none;
 }
 
 .button-menu {
@@ -631,7 +631,7 @@ body {
   background-color: white;
 }
 
-.space .wrapper {
+.slider-wrapper {
   position: relative;
   height: 756px;
   margin-top: 47px;
@@ -734,16 +734,10 @@ body {
   margin: 0 18px;
 }
 
-.organic {
+.organic-wrapper {
   background-color: #e0e0e0;
-  height: 100vh;
+  height: 79vh;
   position: relative;
-}
-
-.organic__social {
-  position: absolute;
-  top: 40%;
-  left: 2%;
 }
 
 .organic__icon {
@@ -761,7 +755,7 @@ body {
   font-size: 15px;
 }
 
-.organic__wrapper {
+.organic_food {
   width: 735px;
   position: absolute;
   top: 28%;
@@ -771,8 +765,7 @@ body {
 .organic__info {
   background-color: #fff;
   text-align: center;
-  width: 735px;
-  margin-left: 9px;
+  padding: 50px 0 20px;
 }
 
 .organic__title {
