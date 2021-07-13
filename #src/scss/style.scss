@@ -14,10 +14,9 @@
 
 // _________________________________________________ section 1
 body {
-    max-width: 1190px;
+    max-width: 100%;
     // font-family: sans-serif;
     font-size: 16px;
-    background-color: opacity;
     overflow-x: hidden;
     border: 0px;
 }
@@ -30,23 +29,26 @@ body {
     // flex-direction: column;
 }
 .adress-line {
-    padding-top: 10px;
-    padding-bottom: 3px;
+    padding-top: 7px;
+    padding-bottom: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: space-between;
     background-color: #e4bb7a;
 }
 .maps img {
-    padding-left: 11px;
+    padding-left: 25px;
 }
 .maps a {
     text-decoration: none;
-    font-family: "Average", sans-serif;
+    font-family: Average,sans-serif;
     font-size: 14px;
-    color: black;
+    color: #000;
     font-weight: 800;
-    word-spacing: -3px;
-    padding-left: 5px;
+    word-spacing: -3.5px;
+    padding-left: 4px;
+    
 }
 .social {
     height: 13px;
@@ -56,9 +58,9 @@ body {
     width: 13px;
 }
 .twitter {
-    height: 13px; 
-    padding-right: 8px;
-    padding-left: 15px;
+    height: 13px;
+    padding-right: 25px;
+    padding-left: 11px;
     cursor: pointer;
 }
 .instagram {
@@ -76,19 +78,21 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: black;
+    padding-bottom: 14px;
+    padding-top: 2px;
     // position: sticky;
     // top: 0;
     // z-index: 100;
 }
 .logotip img {
     position: absolute;
-    top: 25px;
-    left: 12px;
+    top: 24px;
+    left: 25px;
 }
 .wrapper .navigation-container {
     display: flex;
-    align-items: center;
-    padding-top: 19px;
+    align-items: baseline;
+    padding-top: 18px;
     text-decoration: none; 
 }
 .navigation ul {
@@ -97,7 +101,7 @@ body {
     
 }
 .navigation li {
-    margin-left: 38px; 
+    margin-left: 35px; 
 }
 .navigation a {
     font-family: "Montserrat-regular", sans-serif;
@@ -107,17 +111,19 @@ body {
 }
 .button-menu {
     display: flex;
-    margin-left: 19px;
+    margin-left: 36px;
+    margin-right: 16px;
     background-color: transparent;
-    border: none;    
+    border: none;
 }
 .main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 1190px;    
-    height: 96vh;
+    width: 100%;
+    height: 920px;
+    margin-top: 7px;
     background-image: url(../img/vine-and-steak.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -135,27 +141,29 @@ body {
     margin-top: 22px;
 }
 .main-content h1 {
-    font-family: "Average", sans-serif;
+    font-family: "Average",sans-serif;
     font-size: 75px;
     color: #fff;
-    letter-spacing: 1px;
-    padding-left: 14px;
+    letter-spacing: 0.5px;
+    padding-left: 3px;
     font-weight: 500;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
     height: 1px;
     margin-top: 65px;
 }
 .main-content p {
-    color: white;
-    margin-bottom: 87px;
+    color: #fff;
+    margin-bottom: 91px;
+    letter-spacing: .3px;
+    margin-left: 5px;
 }
 .main-content img {
     position: absolute;
-    top: 56%;
+    top: 67%;
 }
 .main-content .button {
-    width: 174px;
-    height: 48px;
+    width: 171px;
+    height: 52px;
     background-color: #e4bb7a;
     color: #000;
     font-family: Montserrat-regular;
@@ -163,26 +171,25 @@ body {
     font-size: 16px;
     font-weight: 700;
     border: none;
-    margin-left: 11px;
-    margin-top: 9px;
-    
+    margin-left: 1px;
+    margin-top: 1px;
 }
 .scroll-down {
-   width: 25px;
-   position: absolute;
-   bottom: -1%;
-    left: 45%;
+    width: 25px;
+    position: absolute;
+    bottom: -10%;
+    left: 49%;
 }
 
 //    ____________________________________ section 2
 
- .space {
-  text-align: center;
-  padding-left: 36px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: white;
-  }
+.space {
+    text-align: center;
+    padding-left: 21px;
+    padding-top: 21px;
+    padding-bottom: 27px;
+    background-color: #fff;
+}
 .slider-wrapper {
     position: relative;
     height: 756px;
@@ -194,17 +201,17 @@ body {
 
   .image-slider__image {
       text-align: center;
-      width: 1190px;
+      
   }
   .image-slider__image img {
-      height: 775px;
-      opacity: 0.9;
-      width: 1190px;
-  }
+    height: 770px;
+    opacity: .9;
+    width: 1220px;
+}
   .gallery__box {
     z-index: 10;
     position: absolute;
-    top: 19%;
+    top: 18%;
     width: 397px;
     left: 1%;
     height: 360px;
@@ -229,6 +236,7 @@ body {
     letter-spacing: 2px;
     color: #fff;
     height: 7px;
+    padding-bottom: 11px;
     margin-bottom: 5px;
 }
 .gallery__text {
@@ -245,10 +253,12 @@ body {
     height: 45px;
     background-color: #e4bb7a;
     color: #121212;
-    font-family: "Montserrat-regular", sans-serif;
+    font-family: Montserrat-regular,sans-serif;
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 700;
+    margin-bottom: -8px;
+    margin-left: 11px;
     border: none;
     outline-color: #121212;
 }
@@ -273,9 +283,11 @@ body {
                             //  <!-- section 3 -->
 
  .organic-wrapper {
-    background-color: #e0e0e0;
-    height: 79vh;
-    position: relative;
+ background-image: url(../img/vegetables.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 1003px;
+ position: relative;
  }
  .organic__social {
     position: absolute;
@@ -288,18 +300,16 @@ body {
     margin-bottom: 30px;
     padding: 11px;
 }
- .organic__icon a {
-    color: #000;
- }
- .organic__icon i {
-    font-size: 15px;
+.organic__icon a img {
+    height: 11px;
+    width: 16px;
 }
 .organic_food {
-    width: 730px;
+    width: 733px;
     position: absolute;
-    top: 28%;
+    top: 24%;
     left: 20%;
-    bottom: 18%;
+    bottom: 30%;
 }
 .organic_food::after {
     content: "";
@@ -316,25 +326,26 @@ body {
 .organic__info {
     background-color: #fff;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 38px;
 }
 .organic__title {
     font-size: 36px;
     font-family: Montserrat-bold,sans-serif;
     text-transform: uppercase;
     color: #1b1b1b;
-    margin-top: 50px;
+    margin-top: 58px;
+    margin-left: 6px;
     letter-spacing: 4px;
 }
 .arrow {
-    padding: 11px;
+    padding: 9px;
 }
 .organic__text {
     font-size: 15px;
     font-family: Average,sans-serif;
     color: #4d4d4d;
     line-height: 1.8;
-    padding: 6px 72px;
+    padding: 3px 75px;
 }
 .white-btn {
     width: 171px;
@@ -343,7 +354,13 @@ body {
     font-family: Montserrat-regular,sans-serif;
     text-transform: uppercase;
     font-size: 15px;
-       font-weight: 700;
+    font-weight: 700;
     border: 1px solid #000;
-    margin: 17px 0 65px -1px;
+    margin: 17px 0 61px -3px;
+}
+.scroll-mause {
+    width: 25px;
+    position: absolute;
+    bottom: 7%;
+    left: 49%;
 }
