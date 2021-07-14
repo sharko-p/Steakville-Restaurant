@@ -206,13 +206,13 @@ body {
   .image-slider__image img {
     height: 770px;
     opacity: .9;
-    width: 1220px;
+    width: 100%;
 }
   .gallery__box {
     z-index: 10;
     position: absolute;
     top: 18%;
-    width: 397px;
+    width: 33%;
     left: 1%;
     height: 360px;
     display: flex;
