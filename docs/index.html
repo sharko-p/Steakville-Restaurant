@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.min.css">
-    <title>Document</title>
+    <title>Steakville Restaurant</title>
 </head>
 
 <body>
@@ -15,24 +16,43 @@
     <div class="wrapper-preview">
         <div class="adress-line">
             <div class="maps">
-                <img src="./img/Point.png" alt="gps">
-                <a href="#">New Scotland Yard, 8-10 Broadway, Westminster, London SW1H 0BG</a>
+                <a href="#">
+                    <img src="./img/Point.png" alt="gps">
+                    New Scotland Yard, 8-10 Broadway, Westminster, London SW1H 0BG</a>
             </div>
             <div class="social">
                 <svg viewBox="0 0 448 512">
                     <path fill="currentColor"
                         d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" />
                 </svg>
-                <img class="instagram" src="./img/insta.png" alt="instagram-icons">
-                <img class="twitter" src="./img/twitter.png" alt="instagram-icons">
+                <svg viewBox="0 0 24 24">
+                    <title>instagram</title>
+                    <path
+                        d="M17.626 1.5h-11.252c-2.691 0.003-4.871 2.183-4.874 4.874v11.252c0.003 2.691 2.183 4.871 4.874 4.874h11.252c2.691-0.003 4.871-2.183 4.874-4.874v-11.252c-0.003-2.691-2.183-4.871-4.874-4.874h-0zM21 17.626c0 1.863-1.511 3.374-3.374 3.374h-11.252c-1.863 0-3.374-1.511-3.374-3.374v0-11.252c0-1.863 1.511-3.374 3.374-3.374h11.252c1.863 0 3.374 1.511 3.374 3.374v0z">
+                    </path>
+                    <path
+                        d="M12 6.75c-3.107 0-5.625 2.518-5.625 5.625s2.518 5.625 5.625 5.625c3.107 0 5.625-2.518 5.625-5.625 0-1.553-0.63-2.96-1.648-3.977v0c-1.012-1.018-2.414-1.648-3.962-1.648-0.005 0-0.011 0-0.016 0h0.001zM12 16.5c-2.278 0-4.125-1.847-4.125-4.125s1.847-4.125 4.125-4.125c2.278 0 4.125 1.847 4.125 4.125v0c0 2.278-1.847 4.125-4.125 4.125v0z">
+                    </path>
+                    <path
+                        d="M19.5 6c0 0.828-0.672 1.5-1.5 1.5s-1.5-0.672-1.5-1.5c0-0.828 0.672-1.5 1.5-1.5s1.5 0.672 1.5 1.5z">
+                    </path>
+                </svg>
+                <svg viewBox="0 0 510 510">
+                    <path d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z
+                        M400.35,186.15c-2.55,117.3-76.5,198.9-188.7,204C165.75,392.7,132.6,377.4,102,359.55c33.15,5.101,76.5-7.649,99.45-28.05
+                       c-33.15-2.55-53.55-20.4-63.75-48.45c10.2,2.55,20.4,0,28.05,0c-30.6-10.2-51-28.05-53.55-68.85c7.65,5.1,17.85,7.65,28.05,7.65
+                       c-22.95-12.75-38.25-61.2-20.4-91.8c33.15,35.7,73.95,66.3,140.25,71.4c-17.85-71.4,79.051-109.65,117.301-61.2
+                       c17.85-2.55,30.6-10.2,43.35-15.3c-5.1,17.85-15.3,28.05-28.05,38.25c12.75-2.55,25.5-5.1,35.7-10.2
+                       C425.85,165.75,413.1,175.95,400.35,186.15z" />
+                </svg>
             </div>
         </div>
         <!-- // ____________________________   header -->
         <header class="header">
             <nav class="wrapper">
-                <div class="logotip">
+                <button class="logotip-header">
                     <img src="./img/Logo.png" alt="icon logotip">
-                </div>
+                </button>
                 <div class="navigation-container">
                     <div class="navigation">
                         <ul>
@@ -40,19 +60,19 @@
                                 <a href="#">home</a>
                             </li>
                             <li>
-                                <a href="#">reservations</a>
+                                <a href="#reservation">reservations</a>
                             </li>
                             <li>
-                                <a href="#">menu</a>
+                                <a href="#menu">menu</a>
                             </li>
                             <li>
-                                <a href="#">blog</a>
+                                <a href="#blog">blog</a>
                             </li>
                             <li>
-                                <a href="#">features</a>
+                                <a href="#features">features</a>
                             </li>
                             <li>
-                                <a href="#">contact</a>
+                                <a href="#contact">contact</a>
                             </li>
                         </ul>
                     </div>
@@ -67,104 +87,110 @@
                 <h2>Welcome to</h2>
                 <h1>Steakville Restaurant</h1>
                 <p>New Scotland Yard, 8-10 Broadway, Westminster, London SWIH0BG</p>
-                <img src="./img/arrow.png" alt="arrow">
+                <img class="arrow-main-content" src="./img/arrow.png" alt="arrow">
                 <button type="button" class="button">Menu</button>
+                <a class="scroll-down" href="./index.html">
+                    <img src="./img/Scroll Down.png" alt="Scroll Down">
+                </a>
             </div>
         </section>
 
-        <p class="scroll-down"><a href="./index.html"><img src="./img/Scroll Down.png" alt="scroll down"></a></p>
 
     </div>
 
     <!--_____________________________________ section 2 -->
-    <div class="space">
-        <img src="./img/Logo2.png" alt="logotip">
-    </div>
-    <div class="slider-wrapper">
-        <div class="image-slider swiper-container">
-            <div class="image-slider__wrapper swiper-wrapper">
-                <div class="image-slider__slide swiper-slide">
-                    <div class="image-slider__image">
-                        <img src="./img/sviper1.jpg" alt="sviper1">
-                        <div class="gallery__box">
-                            <h2 class="gallery__title1">The best cuisine</h2>
-                            <h3 class="gallery__title2">In your town</h3>
-                            <p class="gallery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <button type="button" class="gold-btn">Menu</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="image-slider__slide swiper-slide">
-                    <div class="image-slider__image">
-                        <img src="./img/sviper2.jpg" alt="sviper2">
-                        <div class="gallery__box">
-                            <h2 class="gallery__title1">The best cuisine</h2>
-                            <h3 class="gallery__title2">In your town</h3>
-                            <p class="gallery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <button type="button" class="gold-btn">Menu</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="image-slider__slide swiper-slide">
-                    <div class="image-slider__image">
-                        <img src="./img/sviper3.jpg" alt="sviper3">
-                        <div class="gallery__box">
-                            <h2 class="gallery__title1">The best cuisine</h2>
-                            <h3 class="gallery__title2">In your town</h3>
-                            <p class="gallery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <button type="button" class="gold-btn">Menu</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="image-slider__slide swiper-slide">
-                    <div class="image-slider__image">
-                        <img src="./img/sviper4.jpg" alt="sviper4">
-                        <div class="gallery__box">
-                            <h2 class="gallery__title1">The best cuisine</h2>
-                            <h3 class="gallery__title2">In your town</h3>
-                            <p class="gallery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <button type="button" class="gold-btn">Menu</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="image-slider__slide swiper-slide">
-                    <div class="image-slider__image">
-                        <img src="./img/sviper5.jpg" alt="sviper5">
-                        <div class="gallery__box">
-                            <h2 class="gallery__title1">The best cuisine</h2>
-                            <h3 class="gallery__title2">In your town</h3>
-                            <p class="gallery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <button type="button" class="gold-btn">Menu</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-prev"> </div>
-            <div class="swiper-button-next"> </div>
-            <div class="swiper-pagination"> </div>
-
-
-
-
-
+    <section class="slider-cards">
+        <div class="space-logotip">
+            <img src="./img/Logo2.png" alt="space-logotip">
         </div>
-    </div>
+        <div class="slider-wrapper">
+            <div class="image-slider swiper-container">
+                <div class="image-slider__wrapper swiper-wrapper">
+                    <div class="image-slider__slide swiper-slide">
+                        <div class="image-slider__image">
+                            <img src="./img/sviper1.jpg" alt="sviper1">
+                            <div class="gallery__box">
+                                <h2 class="gallery__title1">The best cuisine</h2>
+                                <h3 class="gallery__title2">In your town</h3>
+                                <p class="gallery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <button type="button" class="gold__btn">Menu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <div class="image-slider__image">
+                            <img src="./img/sviper2.jpg" alt="sviper2">
+                            <div class="gallery__box">
+                                <h2 class="gallery__title1">The best cuisine</h2>
+                                <h3 class="gallery__title2">In your town</h3>
+                                <p class="gallery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <button type="button" class="gold-btn">Menu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <div class="image-slider__image">
+                            <img src="./img/sviper3.jpg" alt="sviper3">
+                            <div class="gallery__box">
+                                <h2 class="gallery__title1">The best cuisine</h2>
+                                <h3 class="gallery__title2">In your town</h3>
+                                <p class="gallery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <button type="button" class="gold-btn">Menu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <div class="image-slider__image">
+                            <img src="./img/sviper4.jpg" alt="sviper4">
+                            <div class="gallery__box">
+                                <h2 class="gallery__title1">The best cuisine</h2>
+                                <h3 class="gallery__title2">In your town</h3>
+                                <p class="gallery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <button type="button" class="gold-btn">Menu</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <div class="image-slider__image">
+                            <img src="./img/sviper5.jpg" alt="sviper5">
+                            <div class="gallery__box">
+                                <h2 class="gallery__title1">The best cuisine</h2>
+                                <h3 class="gallery__title2">In your town</h3>
+                                <p class="gallery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <button type="button" class="gold-btn">Menu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"> </div>
+                <div class="swiper-button-next"> </div>
+                <div class="swiper-pagination"> </div>
+
+            </div>
+        </div>
+    </section>
+
     <!--_________________________________________ section 3 -->
     <div class="space2">
         <img src="./img/Logo2.png" alt="logotip">
     </div>
 
-    <section class="organic-wrapper">
+    <section class="organic__wrapper">
         <div class="organic__social">
             <p class="organic__icon">
                 <a href="#"><img src="./img/pinterest.png" alt="pinterest"></a>
@@ -176,27 +202,28 @@
             </p>
         </div>
 
-        <div class="organic_food">
+        <div id="features" class="organic__food">
             <div class="organic__info">
-                <h2 class="organic__title">Organic food</h2>
-                <img src="./img/arrow.png" class="arrow" alt="arrow picture" data-aos="fade-right" data-aos-offset="120"
-                    data-aos-duration="1000" data-aos-easing="ease-in-out">
-                <p class="organic__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="organic__info">
+                    <h2 class="organic__title">Organic food</h2>
+                    <img src="./img/arrow.png" class="organic__arrow" alt="arrow picture">
+                    <p class="organic__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-                <button class="white-btn">Menu</button>
+                    <button class="button__organic">Menu</button>
+                </div>
             </div>
         </div>
-        <p class="scroll-mause"><a href="#"><img src="./img/Scroll.png" alt="scroll mause"></a>
-        </p>
+        <a class="scroll__mause" href="#"><img src="./img/Scroll.png" alt="scroll mause"></a>
     </section>
     <!--_________________________________________ section 4 -->
 
 
     <div class="welcome-section">
-        <img src="./img/steik-velcome1.jpg" alt="steik-welcome">
-        <img src="./img/sup-velcome2.jpg" alt="sup-welcome">
+        <img class="welcome-section-img1" src="./img/steik-velcome1.jpg" alt="steik-welcome">
+        <img class="welcome-section-img2" src="./img/sup-velcome2.jpg" alt="sup-welcome">
         <div class="welcome-box">
             <h3 class="welcome-title1">Welcome to</h3>
             <h2 class="welcome-title2">Steakville</h2>
@@ -229,7 +256,7 @@
         </p>
     </div>
     <!--_________________________________________ section 6 -->
-    <!-- <section class="burger-menu">
+    <section id="menu" class="burger-menu">
         <div class="intro">
             <h3>
                 Our Dishes
@@ -239,50 +266,308 @@
             </p>
         </div>
         <div class="burgers">
-            <div class="menu__card"></div>
-                <img src="./img/bbqchicken.png" alt="image BBQ Chicken"> 
-                <h3 class="menu__title">BBQ Chicken</h3>
-                <h4 class="menu__subtitle">Big and Meaty</h4>
-                <p class="menu__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            <div class="menu-card">
+                <img src="./img/bbqchicken.png" alt="image BBQ Chicken">
+                <h3>BBQ Chicken</h3>
+                <h4>Big and Meaty</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna.</p>
-                <span class="menu__price">$20.00</span>
+                <span class="menu-price"></span>
+                <b>$20.00</b>
             </div>
-            <div class="menu__card">
+            <div class="menu-card">
                 <img src="./img/whopesandwich.png" alt="image Big and Meaty">
-                <h3 class="menu__title">Whope Sandwich</h3>
-                <h4 class="menu__subtitle">Big and Meaty</h4>
-                <p class="menu__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                <h3>Whope Sandwich</h3>
+                <h4>Big and Meaty</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna.</p>
-                <span class="menu__price">$32.00</span>
+                <b>$32.00</b>
             </div>
-            <div class="menu__card">
+            <div class="menu-card">
                 <img src="./img/homestyleburger.png" alt="image Homestyle Burger">
-                <h4 class="menu__subtitle">Big and Meaty</h4>
-                <p class="menu__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                <h3>Homestyle Burger</h3>
+                <h4>Big and Meaty</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna.</p>
-                <span class="menu__price">$12.00</span>
+                <b>$12.00</b>
             </div>
-            <div class="menu__card">
+            <div class="menu-card">
                 <img src="./img/baconsandwich.png" alt="image Bacon Sandwichr">
-                <h3 class="menu__title">Bacon Sandwich</h3>
-                <h4 class="menu__subtitle">Big and Meaty</h4>
-                <p class="menu__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                <h3>Bacon Sandwich</h3>
+                <h4>Big and Meaty</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna.</p>
-                <span class="menu__price">$25.00</span>
+                <b>$25.00</b>
             </div>
 
-        </div> -->
+        </div>
+    </section>
+    <!--_________________________________________ section 7 -->
+    <section class="evening-menu">
+        <div class="intro-menu">
+            <h4>Steakville</h4>
+            <h3>Our menu</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat</p>
+        </div>
 
-
-
-
-
+        <div class="wrapper">
+            <div class="dish">
+                <img src="./img/poblano.png" alt="picture of dishes">
+                <div class="description">
+                    <h3>Poblano qeso spinach dip</h3>
+                    <p>Creamy queso is infused with spicy Poblano peppers</p>
+                </div>
+                <b>$14.99</b>
+            </div>
+            <div class="dish">
+                <img src="./img/boneless2.png" alt="picture of dishes">
+                <div class="description">
+                    <h3>Boneless buffalo wings</h3>
+                    <p>This wings are legendary!</p>
+                </div>
+                <b>$52.99</b>
+            </div>
+            <div class="dish">
+                <img src="./img/grilledfilet.png" alt="picture of dishes">
+                <div class="description">
+                    <h3>Grilled filet mignon</h3>
+                    <p>The most tender of all steaks!</p>
+                </div>
+                <b>$32.99</b>
+            </div>
+            <div class="dish">
+                <img src="./img/poblano2.png" alt="picture of dishes">
+                <div class="description">
+                    <h3>Poblano qeso spinach dip</h3>
+                    <p>Creamy queso is infused with spicy Poblano peppers</p>
+                </div>
+                <b>$14.99</b>
+            </div>
+            <div class="dish">
+                <img src="./img/grilledcedar.png" alt="picture of dishes">
+                <div class="description">
+                    <h3>Grilled cedar plank salmon</h3>
+                    <p>A fresh filet from North Atlantic salmon is rubbed...</p>
+                </div>
+                <b>$14.99</b>
+            </div>
+            <div class="dish">
+                <img src="./img/grilledcedar2.png" alt="picture of dishes">
+                <div class="description">
+                    <h3>Grilled cedar plank salmon</h3>
+                    <p>A fresh filet from North Atlantic salmon is rubbed...</p>
+                </div>
+                <b>$14.99</b>
+            </div>
+            <div class="dish">
+                <img src="./img/mozzarella.png" alt="picture of dishes">
+                <div class="description">
+                    <h3>Mozzarella moons</h3>
+                    <p>Mozzarella cheese</p>
+                </div>
+                <b>$42.99</b>
+            </div>
+            <div class="dish">
+                <img src="./img/grilledfilet2.png" alt="picture of dishes">
+                <div class="description">
+                    <h3>Grilled filled mignon</h3>
+                    <p>The most tender of all steaks!</p>
+                </div>
+                <b>$32.99</b>
+            </div>
+            <div class="dish">
+                <img src="./img/boneless.png" alt="picture of dishes">
+                <div class="description">
+                    <h3>Boneless buffalo wings</h3>
+                    <p>This wings are legendary!</p>
+                </div>
+                <b>$52.99</b>
+            </div>
+            <div class="dish">
+                <img src="./img/mozzarella2.png" alt="picture of dishes">
+                <div class="description">
+                    <h3>Mozzarella moons</h3>
+                    <p>Mozzarella cheese</p>
+                </div>
+                <b>$42.99</b>
+            </div>
+        </div>
 
     </section>
 
+    <!--_________________________________________ section 8 -->
+
+    <section class="opening-hours">
+
+        <h4>Your welcome</h4>
+        <h3>Opening hours</h3>
+        <div class="wrapper">
+            <img src="./img/restaurant.jpg" alt="Restaurant">
+            <div class="working-hours">
+                <h5 class="hours__meal">Dinner :</h5>
+                <p>Tuesday to Saturday 5.30 pm til 9.00 pm</p>
+                <p>Bank Holiday Sundays 6pm to 9 pm</p>
+                <h5 class="hours__meal">Lunch :</h5>
+                <p>Friday 12.30 til 2.30 pm</p>
+                <p>Sunday 12.30 til 4.30 pm</p>
+
+            </div>
+        </div>
+
+    </section>
+    <!--_________________________________________ section 9 -->
+
+    <section class="chefs">
+        <div class="our-chefs">
+            <h4>Our staff</span></h4>
+            <h3>meet our chefs</h3>
+        </div>
+        <div class="chefs-names">
+            <div class="staff">
+                <img class="photo" src="./img/jamestkirk.png" alt="coffee beans">
+                <h5>James T Kirk</h5>
+                <span class="chef-position">Kaptain</span>
+                <div class="social-line">
+                    <a href="#">
+                        <img src="./img/facebook2.png" alt="facebook"></a>
+                    <a href="#">
+                        <img src="./img/instagram2.png" alt="instagram"></a>
+                    <a href="#">
+                        <img src="./img/pinterest2.png" alt="pinterest"></a>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore</p>
+            </div>
+            <div class="staff">
+                <img class="photo" src="./img/leonard.png" alt="coffee beans">
+                <h5>Leonard McCoy</h5>
+                <span class="chef-position">Doctor Not A</span>
+                <div class="social-line">
+                    <a href="#">
+                        <img src="./img/facebook2.png" alt="facebook"></a>
+                    <a href="#">
+                        <img src="./img/instagram2.png" alt="instagram"></a>
+                    <a href="#">
+                        <img src="./img/pinterest2.png" alt="pinterest"></a>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore</p>
+            </div>
+            <div class="staff">
+                <img class="photo" src="./img/hikaru.png" alt="coffee beans">
+                <h5>Hikaru Sulu</h5>
+                <span class="chef-position">Pilot</span>
+                <div class="social-line">
+                    <a href="#">
+                        <img src="./img/facebook2.png" alt="facebook"></a>
+                    <a href="#">
+                        <img src="./img/instagram2.png" alt="instagram"></a>
+                    <a href="#">
+                        <img src="./img/pinterest2.png" alt="pinterest"></a>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore</p>
+            </div>
+        </div>
+    </section>
+    <!--_________________________________________ section 10 -->
+
+    <section id="reservation" class="reservations">
+        <h4>Reservation</h4>
+        <h3>Book a table</h3>
+        <img src="./img/arrow.png" alt="arrow picture">
+        <div class="reservations-wrapper">
+            <input type="text" placeholder="Time" onfocus="(this.type='time')">
+            <input type="text" placeholder="Date" onfocus="(this.type='date')">
+            <select name="People" placeholder="People">
+                <option value="0">People</option>
+                <option value="1">1 person</option>
+                <option value="2">2 people</option>
+                <option value="3">3 people</option>
+                <option value="4">4 people</option>
+                <option value="5">5 people</option>
+                <option value="5+">More than 5</option>
+            </select>
+        </div>
+        <button type="button" class="button-reservations">Book a table</button>
+    </section>
+    <!--_________________________________________ section 11 -->
+    <section class="citation-slider">
+        <img src="./img/kav.png" alt="quotes">
+        <div class="swiper-cont">
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="citation-slide">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”
+                            </p>
+                            <h4>Jonh Will</h4>
+                            <h5>Proffesional Cleaner</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="citation-slide">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”
+                            </p>
+                            <h4>Jonh Will</h4>
+                            <h5>Proffesional Cleaner</h5>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="citation-slide">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”
+                            </p>
+                            <h4>Jonh Will</h4>
+                            <h5>Proffesional Cleaner</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"> </div>
+            </div>
+        </div>
+    </section>
+    <!--_________________________________________ section 12 -->
+
+    <section id="blog" class="customer-feedback">
+        <div class="feedback">
+            <h4>Our best clients</h4>
+            <h3>Happy customers</h3>
+            <img src="./img/arrow.png" alt="arrow picture">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.”</p>
+            <img class="stars" src="./img/stars.png" alt="stars">
+            <h5>Bad Comedian</h5>
+            <span>Movie Critic</span>
+        </div>
+        <footer>
+            <section id="contact" class="forma">
+                <h4>Subscribe to our newsletter</h4>
+                <img src="./img/arrow.png" alt="arrow picture">
+                <div class="send">
+                    <form action="get">
+                        <input type="email" class="email" placeholder="Email">
+                    </form>
+                    <div class="subscribe">
+                        <input type="submit" value="Subscribe">
+                    </div>
+
+                </div>
+            </section>
+        </footer>
 
 
-
+    </section>
 
 
 

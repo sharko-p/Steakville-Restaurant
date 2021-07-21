@@ -1,4 +1,3 @@
-
 let project_folder = "docs";
 let source_folder = "#src";
 
@@ -165,7 +164,6 @@ function watchFiles(params) {
     gulp.watch([path.watch.js], js);
     gulp.watch([path.watch.img], images);
 }
-
 function clean(params) {
   return del(path.clean);
 }
@@ -187,4 +185,3 @@ exports.html = html;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
-
