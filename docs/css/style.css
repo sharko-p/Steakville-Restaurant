@@ -987,7 +987,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 600px;
+  height: 78vh;
   background-image: url(../img/bg-history.jpg);
   position: relative;
   background-repeat: no-repeat;
@@ -1769,14 +1769,20 @@ body {
     font-size: 14px;
   }
 
+  .social {
+    width: 23%;
+  }
+
   header .wrapper {
     padding: 10px;
     border-top: px solid #e4bb7a;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
   }
 
   .logotip-header {
-    width: 50px;
-    height: 75px;
+    display: none;
   }
 
   .button-menu {
@@ -1861,9 +1867,7 @@ body {
   .welcome-box::after,
   .welcome-box::before {
     content: none;
-    position: absolute;
     left: 46px;
-    border-right: 1px solid #e4bb7a;
     width: 431px;
     height: 19px;
     z-index: 27;
@@ -1904,6 +1908,10 @@ body {
     padding-bottom: 0px;
   }
 
+  .dish {
+    padding-left: 18px;
+  }
+
   .citation-slide p {
     margin-left: 20px;
     margin-top: 30px;
@@ -1912,6 +1920,35 @@ body {
   .citation-slider {
     height: 39vh;
   }
+}
+
+@media all and (max-width: 430px) {
+  .adress-line {
+    height: 4vh;
+    padding-left: 6px;
+  }
+
+  .wrapper-preview {
+    height: 59vh;
+  }
+
+  .main-content {
+    height: 48vh;
+    background-size: auto;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  h2,
+  h3 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
 
   .maps a {
     font-size: 11px;
@@ -1919,6 +1956,7 @@ body {
 
   .social {
     margin-right: 10px;
+    width: 33%;
   }
 
   .social svg {
@@ -1928,6 +1966,10 @@ body {
 
   .wrapper .navigation-container {
     padding-top: 0;
+  }
+
+  .navigation ul {
+    padding: 0px;
   }
 
   .navigation li {
@@ -1947,5 +1989,444 @@ body {
   .main-content .button {
     width: 140px;
     height: 34px;
+  }
+
+  .space-logotip {
+    padding-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .gallery__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 0%;
+    width: 82%;
+    left: 13%;
+    height: 34vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .slider-cards {
+    height: 53vh;
+  }
+
+  .image-slider__image img {
+    height: 39vh;
+    width: 100%;
+  }
+
+  .gallery__title2 {
+    font-size: 26px;
+    padding-bottom: 22px;
+    margin-bottom: 8px;
+  }
+
+  .gallery__title1 {
+    font-size: 35px;
+    height: 4px;
+    margin-bottom: 0px;
+  }
+
+  .gallery__text {
+    height: 100px;
+    width: 95%;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+  }
+
+  .gold__btn {
+    width: 150px;
+    height: 38px;
+    font-size: 14px;
+    margin-bottom: 19px;
+  }
+
+  .organic__wrapper {
+    height: 37vh;
+  }
+
+  .organic__social {
+    top: 0%;
+    left: 38%;
+  }
+
+  .organic__icon {
+    margin-left: 11px;
+    padding: 3px;
+  }
+
+  .organic__icon a img {
+    height: 10px;
+    width: 15px;
+  }
+
+  .organic__food {
+    width: 270px;
+    height: 61vh;
+  }
+
+  .organic__food::after {
+    width: 100%;
+    height: 27vh;
+    top: 1%;
+    left: 0;
+  }
+
+  .organic__info {
+    padding-top: 0px;
+    width: 100%;
+  }
+
+  .organic__title {
+    font-size: 20px;
+    margin-top: 11px;
+    letter-spacing: 2px;
+  }
+
+  .organic__text {
+    color: #4d4d4d;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .button__organic {
+    width: 130px;
+    height: 30px;
+    margin: 12px 0;
+  }
+
+  .scroll__mause {
+    display: none;
+  }
+
+  .welcome-section {
+    padding-top: 24px;
+    height: 54vh;
+  }
+
+  .welcome-section img {
+    width: 270px;
+    height: 402px;
+    margin-left: 0;
+  }
+
+  .welcome-box {
+    height: 39vh;
+    max-width: 229px;
+    padding: 13px 5px 0px 7px;
+    top: 10%;
+  }
+
+  .welcome-text {
+    line-height: 1.4;
+    padding-top: 12px;
+  }
+
+  .welcome-title1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .welcome-title2 {
+    font-size: 29px;
+    letter-spacing: 2px;
+  }
+
+  .our-history {
+    height: 29vh;
+  }
+
+  .our-history .wrapper {
+    height: 28vh;
+    margin-top: 7px;
+    margin-left: 24px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .our-history h3 {
+    padding-top: 0;
+  }
+
+  .our-history h2 {
+    padding-top: 0px;
+    margin: 0;
+  }
+
+  .our-history p {
+    padding-top: 4px;
+    line-height: 17px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+  }
+
+  .our-history .button {
+    width: 138px;
+    height: 33px;
+    margin-left: 0px;
+    margin-top: 11px;
+  }
+
+  .quote {
+    height: 14vh;
+  }
+
+  .quote p:nth-last-child(2) {
+    font-size: 16px;
+    text-align: center;
+    padding-left: 32px;
+    padding-top: 20px;
+  }
+
+  .quote p:nth-last-child(1) {
+    font-size: 33px;
+    padding-top: 10px;
+  }
+
+  .burger-menu {
+    height: 88vh;
+  }
+
+  .intro {
+    height: 12vh;
+  }
+
+  .burgers {
+    padding: 0 14px 19px 44px;
+  }
+
+  .menu-card img {
+    display: none;
+  }
+
+  .burgers div:nth-child(odd) {
+    padding: 10px 16px 0 16px;
+    text-align: center;
+  }
+
+  .burgers div:nth-child(even) {
+    padding: 10px 16px 0 16px;
+    text-align: center;
+  }
+
+  .burgers h3 {
+    margin-top: 15px;
+  }
+
+  .burgers h4 {
+    margin-top: 14px;
+  }
+
+  .burgers p {
+    font-size: 14px;
+    line-height: 1;
+    padding-top: 20px;
+    padding-bottom: 35px;
+  }
+
+  .menu-card b {
+    padding-top: 3px;
+    font-size: 20px;
+  }
+
+  .intro h3 {
+    padding-top: 15px;
+    letter-spacing: 2px;
+    font-size: 29px;
+  }
+
+  .intro p {
+    padding-top: 0px;
+    letter-spacing: 2px;
+    font-size: 33px;
+  }
+
+  .evening-menu .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 21px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0;
+  }
+
+  .intro-menu {
+    text-align: center;
+    width: 50vh;
+  }
+
+  .intro-menu p {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+  }
+
+  .intro-menu h4 {
+    font-size: 28px;
+    padding-top: 9px;
+  }
+
+  .intro-menu h3 {
+    font-family: Montserrat-bold,sans-serif;
+    letter-spacing: .7px;
+    font-size: 32px;
+  }
+
+  .dish {
+    grid-template-columns: none;
+    text-align: left;
+    padding-right: 7px;
+    padding-bottom: 10px;
+  }
+
+  .dish img {
+    display: none;
+  }
+
+  .dish h3 {
+    line-height: 1.5;
+    font-size: 14px;
+  }
+
+  .evening-menu {
+    justify-items: flex-start;
+    text-align: left;
+  }
+
+  .description {
+    grid-column: 1;
+  }
+
+  .opening-hours {
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
+
+  .opening-hours h4 {
+    font-size: 28px;
+  }
+
+  .opening-hours h3 {
+    font-size: 32px;
+    padding-left: 0px;
+    word-spacing: 3px;
+  }
+
+  .opening-hours .wrapper {
+    height: 47vh;
+    padding-top: 10px;
+  }
+
+  .chefs {
+    height: 56vh;
+    padding-top: 11px;
+  }
+
+  .our-chefs h4 {
+    font-size: 28px;
+    margin: 0;
+  }
+
+  .staff p {
+    font-size: 14px;
+    width: 100%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+  }
+
+  .our-chefs {
+    height: 12vh;
+  }
+
+  .reservations {
+    padding-bottom: 0px;
+  }
+
+  .reservations h4 {
+    font-size: 28px;
+    padding-top: 43px;
+  }
+
+  .reservations h3 {
+    font-size: 32px;
+    word-spacing: 4px;
+    margin-bottom: 16px;
+  }
+
+  .reservations-wrapper input,
+  .reservations-wrapper select {
+    height: 42px;
+    width: 117px;
+    line-height: 1.5;
+    padding: 12px;
+    margin: 9px;
+  }
+
+  .citation-slider {
+    height: 39vh;
+  }
+
+  .citation-slider img {
+    margin-top: 33px;
+  }
+
+  .customer-feedback h4 {
+    font-size: 28px;
+    padding-top: 14px;
+  }
+
+  .customer-feedback h3 {
+    margin-bottom: 10px;
+    font-size: 32px;
+  }
+
+  .customer-feedback p {
+    max-width: 84%;
+    line-height: 24px;
+    margin-top: 15px;
+  }
+
+  .stars {
+    margin-top: 5px;
+  }
+
+  .customer-feedback h5 {
+    margin-top: 17px;
+    letter-spacing: 2.5px;
+  }
+
+  .forma h4 {
+    margin-top: 13px;
+    letter-spacing: 2px;
+  }
+
+  .forma img {
+    margin: 17px 0 14px;
+  }
+
+  .email {
+    height: 30px;
+    width: 167px;
+    padding: 5px;
+  }
+
+  .subscribe input {
+    width: 148px;
+    height: 43px;
+    margin: 0 0 20px 21px;
   }
 }
