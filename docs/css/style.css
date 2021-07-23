@@ -991,7 +991,7 @@ body {
   background-image: url(../img/bg-history.jpg);
   position: relative;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .our-history .wrapper {
