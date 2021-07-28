@@ -16,26 +16,13 @@ new Swiper('.image-slider', {
     autoHeight: true,
     loop: true,
     //    автопрокрутка
-    // autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false
-    // },
-    //     speed: 1000,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+    },
+        speed: 1000,
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

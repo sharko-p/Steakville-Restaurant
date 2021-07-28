@@ -15,10 +15,11 @@
 
 // _________________________________________________ section 1
 body {
-    max-width: 1220px;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
+    // max-width: 1220px;
+    // margin-left: auto;
+    // margin-right: auto;
+    // box-sizing: border-box;
+    width: 100%;
     font-size: 16px;
     overflow-x: hidden;
     border: 0px;
@@ -31,8 +32,8 @@ body {
 }
 .wrapper-preview {    
     height: 100vh;    
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-repeat: no-repeat;
+    // background-size: cover;
     box-sizing: border-box;
 }
 .adress-line {
@@ -43,11 +44,17 @@ body {
     background-color: #e4bb7a;
     padding-left: 21px;
 }
-.adress-line a:hover {
-    color: white;
+.maps:hover {
+    transform: scale(1.1);
+    transition: 1s; 
+
 }
+    // .point-maps:hover {
+    //     background-color: white;
+    // }
 .maps img {
     cursor: pointer;
+    color: white;
 }
 .maps a {
     text-decoration: none;
@@ -65,20 +72,19 @@ body {
     margin-left: 13px;
 }
 .social svg:hover {
-    background-color: white;
+    background-color: #fff;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
   // ________________________________________   header
-.header {
-    height: 8vh;  
-   
-}
+ 
 .header .wrapper {
     position: relative;
     display: flex;
     justify-content: space-between;
     background-color: black;
-    height: 9vh;
+    height: 8vh;
     // position: sticky;
     // top: 0;
     // z-index: 100;
@@ -93,6 +99,9 @@ body {
     top: 24px;
     left: 25px;
     cursor: pointer;
+}
+.burger-menu {
+    display: none;
 }
 .wrapper .navigation-container {
     display: flex;
@@ -116,6 +125,7 @@ body {
 }
 .navigation a:hover {
     color: #e4bb7a;
+    transition: 0.5s;
 }
 .button-menu {
     display: flex;
@@ -131,7 +141,6 @@ body {
 .main-content {
     display: flex;
     align-items: flex-end;
-    flex-grow: 1;
     height: 89vh;
     background-image: url(../img/vine-and-steak.jpg);
     background-repeat: no-repeat;
@@ -139,11 +148,14 @@ body {
     background-attachment: fixed;
  }
 .main-content .wrapper {
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100%;
+   
 }
 .main-content h2 {
     font-family: "WildYouth", sans-serif;
@@ -171,7 +183,7 @@ body {
     margin-bottom: 43px;
 }
 .arrow-main-content {
-    margin-bottom: 47px;
+    margin-bottom: 43px;
 }
 .main-content .button {
     width: 171px;
@@ -183,15 +195,15 @@ body {
     font-size: 16px;
     font-weight: 700;
     border: none;
-    margin-bottom: 58px;
-    
+    margin-bottom: 115px;
+    transition: 0.5s;
 }
 .scroll-down {
     width: 22px;
     height: 25px;
     cursor: pointer;
     padding: 0;
-    margin-bottom: 47px;
+    margin-bottom: 40px;
 }
 .scroll-down a {
     text-decoration: none;
@@ -201,16 +213,14 @@ body {
 //    ____________________________________ section 2
 
 .slider-cards {
-    max-width: 1220px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
-    height: 100vh;
+    // max-width: 100%;
+    // padding-left: 15px;
+    // padding-right: 15px;
+    // margin-left: auto;
+    // margin-right: auto;
+    // box-sizing: border-box;
     background-color: #3f3f3f;
 }
-
 .space-logotip {
     text-align: center;
     width: 100%;
@@ -219,43 +229,55 @@ body {
     margin-bottom: 30px;
 }
 .slider-wrapper {
-    position: relative;
-    height: 699px;
+    background-image: url("../img/sviper1.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 // .image-slider {
 //     padding-bottom: 70px;
 // }
 
-  .image-slider__image {
-      text-align: center;
+//   .image-slider__image {
+//       text-align: center;
       
-  }
-.image-slider__image img {
-    height: 80vh;
-    opacity: .9;
-    width: 91%;
-    object-fit: cover;
+//   }
+  
+// .image-slider__image img {
+//     width: 100%;
+//     opacity: .9;
+//     width: 91%;
+//     height: 85vh;
+//     object-fit: cover;
 
-}
+// }
   .gallery__box {
-    z-index: 10;
-    position: absolute;
-    top: 18%;
-    width: 34%;
-    left: 6%;
-    height: 41vh;
+    // z-index: 10;
+    // position: absolute;
+    // top: 18%;
+    // width: 34%;
+    // left: 6%;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-start;
+    height: 85vh;
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 .gallery__title1 {
     font-family: "WildYouth", sans-serif;
     font-size: 53px;
     color: #e4bb7a;
     font-weight: 500;
-    height: 3px;
-    margin-bottom: -5px;
+    word-spacing: 18px;
+    margin-bottom: 0px;
+    margin-left: 29px;
 }
 .gallery__title2 {
     font-family: Montserrat-bold,sans-serif;
@@ -264,17 +286,15 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #fff;
-    height: 7px;
-    padding-bottom: 22px;
-    margin-bottom: 8px;
+    margin: 0 0 27px 20px;
 }
 .gallery__text {
     font-size: 15px;
     color: #fff;
     line-height: 1.8;
     text-align: left;
-    height: 112px;
-    width: 94%;
+    width: 32%;
+    margin: 0 0 42px 24px;
 }
 .gold__btn {
     width: 171px;
@@ -285,10 +305,11 @@ body {
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 700;
-    margin-bottom: -11px;
-    margin-left: 4px;
+    margin-bottom: 242px;
+    margin-left: 24px;
     border: none;
     outline-color: #121212;
+    transition: 0.5s;
 }
 .gold__btn:hover {
     color:  #e4bb7a;
@@ -318,20 +339,34 @@ text-align: center;
 padding-left: 21px;
 padding-top: 21px;
 background-color: #fff;
-margin-bottom: 15px;
+padding-bottom: 15px;
 }
 
+
+.restaurant-organic {
+    background-image: url(../img/vegetables.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    
+}  
  .organic__wrapper {
- background-image: url(../img/vegetables.jpg);
- background-repeat: no-repeat;
- background-size: contain;
- height: 1003px;
- position: relative;
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
  }
  .organic__social {
     position: absolute;
-    top: 40%;
-    left: 2%;
+    top: 26%;
+    left: 1%;
+ }
+ .organic__icon:hover {
+    transform: scale(1.2);
+    transition: 1s;
  }
 .organic__icon {
     border: 1px solid #000;
@@ -341,38 +376,26 @@ margin-bottom: 15px;
 }
 .organic__icon a img {
     height: 11px;
-    width: 16px;
+    width: 16px; 
 }
 .organic__food {
-    width: 733px;
-    position: absolute;
-    top: 28%;
-    left: 20%;
-    bottom: 30%;
+    width: 710px;
+    border: 6px solid #fff;
+    margin-top: 85px;
+    margin-bottom: 122px;
 }
-.organic__food::after {
-    content: "";
-    position: absolute;
-    width: 97%;
-    height: 102%;
-    top: 1%;
-    left: 1%;
-    border: 1px solid #000;
-    z-index: 20;
-}
-
 
 .organic__info {
+    border: 1px solid #000;
     background-color: #fff;
     text-align: center;
-    padding-top: 27px;
 }
 .organic__title {
     font-size: 36px;
     font-family: Montserrat-bold,sans-serif;
     text-transform: uppercase;
     color: #1b1b1b;
-    margin-top: 53px;
+    margin-top: 45px;
     margin-left: 6px;
     letter-spacing: 4px;
 }
@@ -383,7 +406,7 @@ margin-bottom: 15px;
     font-size: 15px;
     color: #4d4d4d;
     line-height: 1.8;
-    padding: 3px 75px;
+    margin: 33px 65px;
 }
 .button__organic {
     width: 170px;
@@ -393,32 +416,35 @@ margin-bottom: 15px;
     text-transform: uppercase;
     font-size: 15px;
     border: 1px solid #000;
-    margin: 17px 0 62px 0;
+    margin: 31px 0 53px 0;
     cursor: pointer;
-    position: relative;
-    z-index: 25;
 }
 .button__organic:hover {
     color: #000;
     background-color:   #e4bb7a;
+    transition: 0.5s;
 }
 .scroll__mause {
     width: 25px;
-    position: absolute;
-    bottom: 3%;
-    left: 49%;
+    margin-bottom: 3%;
 }
 // <!--_________________________________________ section 4 -->
 
 .welcome-section {
-    padding-top: 90px;
-    height: 510px;
+    padding-top: 95px;
+    padding-bottom: 95px;
     width: 100%;
-    position: relative;
+    
     background-color: #fff5f5;
 }
+.welcome-section .wrapper {
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
 .welcome-section img {
-    width: 270px;
+    max-width: 270px;
     height: 402px;
     margin-left: 26px;
     object-fit: cover;
@@ -426,7 +452,7 @@ margin-bottom: 15px;
 
 .welcome-box::before {
     border-top: 1px solid #e4bb7a;
-    top: -26px;
+    top: -20px;
 }
 .welcome-box::after {
     border-bottom: 1px solid #e4bb7a;
@@ -435,11 +461,12 @@ margin-bottom: 15px;
 .welcome-box::after, .welcome-box::before {
     content: "";
     position: absolute;
-    left: 46px;
+    left: 47px;
     border-right: 1px solid #e4bb7a;
     width: 431px;
     height: 19px;
-    z-index: 27;
+    z-index: 1;
+    box-sizing: border-box;
 }
 .welcome-box {
     background-color: #fff;
@@ -449,7 +476,7 @@ margin-bottom: 15px;
     position: absolute;
     left: 45%;
     z-index: 100;
-    top: 23%;
+    top: 11%;
 }
 
 .welcome-title1 {
@@ -484,29 +511,30 @@ margin-bottom: 15px;
 .our-history {
     display: flex;
     width: 100%;
-    height:78vh;
     background-image: url(../img/bg-history.jpg);
-    position: relative;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .our-history .wrapper {
-    height: 383px;
-    max-width: 575px;
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+.history {
+    max-width: 1170px;
     margin-top: 108px;
-    margin-left: 24px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 .our-history h3 {
     font-family: WildYouth,sans-serif;
+  
     font-size: 50px;
     font-weight: 500;
-    padding-top: 7px;
     letter-spacing: 2px;
     color: #e4bb7a;
-    height: 46px;
     margin: 0;
 }
 .our-history h2 {
@@ -515,18 +543,18 @@ margin-bottom: 15px;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: .5px;
-    padding-top: 9px;
     margin: 0;
+    margin-top: 4px;
 }
 .our-history p {
+    max-width: 575px;
     color: #fff;
-    padding-top: 83px;
     line-height: 26px;
     margin: 0;
+    margin-top: 39px;
 }
 .our-history img {
-    position: absolute;
-    top: 26%;
+margin-top: 34px;
 }
 .our-history .button {
     width: 171px;
@@ -535,15 +563,14 @@ margin-bottom: 15px;
     font-family: Montserrat-regular, sans-serif;
     font-weight: 600;
     border: none;
-    margin-left: 3px;
-    margin-top: 43px;
+    margin: 43px 0 112px 3px;
 }
 .our-history .button:hover {
     color:  #e4bb7a;
     background-color: white;
+    transition: 0.5s;
 }
 .quote {
-    height: 360px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -561,19 +588,22 @@ margin-bottom: 15px;
     font-size: 45px;
     margin: 0px;
     padding-top: 20px;
+    padding-bottom: 40px;
     letter-spacing: 2px;
     color: #e4bb7a;
 }
 // <!--_________________________________________ section 6 -->
 .burger-menu {
-    height: 1004px; 
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
 }
 
 .intro {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 266px;
 }
 
 .intro h3 {
@@ -593,25 +623,23 @@ margin-bottom: 15px;
     font-family: Montserrat-bold,sans-serif;
     text-transform: uppercase;
     margin: 0;
+    margin-bottom: 25px;
 }
 
 .burgers {
     display: grid;    
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,35vh); 
+    grid-template-rows: repeat(2,1fr); 
     grid-gap: 30px;
     padding: 0 138px 91px 140px;
     }
-.burgers div:nth-child(odd) {
-    // width: 515px;
-    // height: 305px;
-    border: 1px solid #e4bb7a;
-    position: relative;
-    text-align: left;
-    justify-self: end;
-    padding-left: 138px;
-    padding-right: 50px;
-}
+    .burgers div:nth-child(odd) {
+        border: 1px solid #e4bb7a;
+        position: relative;
+        text-align: left;
+        justify-self: end;
+        padding: 52px 50px 46px 138px;
+    }
 
 .burgers div:nth-child(even) {
     // width: 515px;
@@ -741,7 +769,7 @@ color: #e4bb7a;
  // <!--_________________________________________ section 8 -->
 
  .opening-hours {
-    padding-top: 73px;
+    padding-top: 80px;
     padding-bottom: 93px;
     text-align: center;
     background-color: #fff5f5;
@@ -766,12 +794,15 @@ color: #e4bb7a;
     margin: 0;
 }
 .opening-hours .wrapper {
-        max-width: 1220px;
-        height: 359px;
-        display: flex;
-        padding-top: 88px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    max-width: 1220px;
+    display: flex;
+    padding-top: 88px;
+    height: 446px;
 }
- .opening-hours .wrapper img {
+.opening-hours .wrapper img {
     width: 64%;
     object-fit: cover;
  }
@@ -779,22 +810,18 @@ color: #e4bb7a;
     display: flex;
     flex-direction: column;
     background-color:#fff;
-    width: 420px;
-    position: relative;
     line-height: 26px;
- } 
- .working-hours::after {
-    content: "";
-    position: absolute;
-    width: 94%;
-    height: 94%;
-    top: 3%;
-    left: 3%;
-    border: 1px solid #000;
+    border: 7px solid #fff;
+    
 }
+.dinner-lunch {
+    border: 1px solid #000;
+    padding: 65px;
+}
+
 .working-hours h5, .working-hours p {
     margin: 0;
-    padding-left: 16px;
+    padding-left: 28px;
     
 }
 .working-hours h5 {
@@ -804,31 +831,22 @@ color: #e4bb7a;
 
     }
 .working-hours h5:nth-child(odd) {
-    padding-top: 85px;
+    margin-top: 24px;
 }
 .working-hours h5:nth-child(even) {
-    padding-top: 32px;
+    margin-top: 32px;
 }
 
-    .working-hours p {
+.working-hours p {
         font-size: 15px;
-    }
+}
 // <!--_________________________________________ section 9 -->
 
 .chefs {
-    height: 100vh;
-    max-width: 1220px;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-top: 47px;
+    padding: 47px 0 0 0;
     background-color: #443c3c;
 }
-.our-chefs {
-    height: 232px;    
+.our-chefs {  
     display: flex;
     flex-direction: column;
     align-items: center;    
@@ -854,7 +872,10 @@ color: #e4bb7a;
 }
 
 .chefs .chefs-names {
-    width: 100%;
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
 }
@@ -885,6 +906,8 @@ margin-bottom: 38px;
 }
 .social-line img:hover {
     background-color: white;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 .social-line img {
     width: 16px;
@@ -974,18 +997,15 @@ text-align: center;
 .button-reservations:hover {
     color:  #e4bb7a;
     background-color: white;
+    transition: 0.5s;
 }
 
 // <!--_________________________________________ section 11 -->
 .citation-slider {
-    max-width: 1220px;
-    margin-left: auto;
-    margin-right: auto;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-sizing: border-box;
-    height: 50vh;
     background-image: url(../img/citation.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -998,12 +1018,16 @@ text-align: center;
     height: 230px;
     width: 83%;
     text-align: center;
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
 }
 
 .citation-slide p {
     text-align: center;
     color: #fff;
-    max-width: 826px;
+    max-width: 85%;
     margin-left: 69px;
     margin-top: 51px;
 }
@@ -1015,7 +1039,7 @@ text-align: center;
     margin-top: 41px;
 }
 .citation-slide h5 {
-    color: #e4bb7a;
+    color:#000;;
 }
 
 .citation-slider .swiper-button-next::after,
@@ -1108,7 +1132,6 @@ color: #e4bb7a;
     outline: 0;
     margin: 0;
 }
-
 .subscribe input {
     font-family: Montserrat-bold,sans-serif;
     width: 171px;
@@ -1124,6 +1147,7 @@ color: #e4bb7a;
     color:  #e4bb7a;
     background-color: white;
     border: 1px solid  #e4bb7a;
+    transition: 0.5s;
 }
 .send {
     display: flex;
@@ -1135,46 +1159,30 @@ color: #e4bb7a;
     body {
         font-size: 14px;
     }
-    .social {
-        width: 23%;
-    }
-    header .wrapper {
-     padding: 10px;
-     border-top: px solid #e4bb7a;
-     justify-content: none;
-    }
-    .logotip-header {
-        display: none;
-    }
-    .button-menu {
-        display: flex;
-        margin-left: 15px;
-        margin-right: 10px;
-        border: none;
-    }
-    .navigation li {
-        margin-left: 10px;
-    }
     // -----2--------
     .gallery__box {
-        top: 4%;
-        width: 37%;
-        left: 9%;
-        height: 55vh;
+        height: none;
+        margin-left: 25px;
+    }
+    .gallery__title1 {
+        margin-top: 0px;
+    }
+    .gallery__text {
         font-size: 14px;
+        line-height: 1.5;
+        width: 40%;
     }
+    .gold__btn {
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+        margin-bottom: 70px;
+        margin-left: 24px;
+    }
+    
     // -----3--------
-    .organic__wrapper {
-    height: 68vh;
-    }
-    .organic__food {
-        width: 491px;
-        height: 356px;
-        top: 15%;
-    }
-    .organic__info {
-        padding-top: 8px;
-    }
+    
+    
     .organic__social {
         display: flex;
         position: absolute;
@@ -1182,32 +1190,16 @@ color: #e4bb7a;
         left: 38%;
     }
     .organic__icon {
-        border: 1px solid #000;
-        border-radius: 50%;
         margin-left: 20px;
         padding: 11px;
     }
-    .organic__title {
-        font-size: 24px;
-        font-family: Montserrat-bold,sans-serif;
-        text-transform: uppercase;
-        color: #1b1b1b;
-        margin-top: 9px;
-        letter-spacing: 4px;
-    }
-    .organic__text {
-        font-size: 14px;
-        color: #4d4d4d;
-        line-height: 1.8;
-        padding: 0px 85px;
-    }
     // -----4--------
     .welcome-box {
-        height: 372px;
-        max-width: 379px;
-        padding: 19px 30px 13px 26px;
-        left: 40%;
-        top: 15%;
+        height: none; 
+        max-width: 350px;
+        padding: 40px 25px 40px 25px;
+        left: 41%;
+        top: 5%;
     }
     .welcome-section-img2 {
         display: none;
@@ -1216,23 +1208,37 @@ color: #e4bb7a;
         content: none;
         left: 46px;
         width: 431px;
-        height: 19px;
         z-index: 27;
     }
     // -----5--------
     .our-history .wrapper {
-        margin-top: 30px;
+        margin-top: 0px;
     }
-    .quote {
-        height: 190px;
+    .history {
+        margin-top: 65px;
     }
     .quote p:nth-last-child(2) {
         font-size: 26px;
         padding-top: 42px;
     }
+    .quote p:nth-last-child(1) {
+        font-size: 32px;
+        padding-bottom: 20px;
+    }
     // -----6--------
     .burgers {
-        padding: 0 145px 40px 147px;
+        padding: 0 138px 29px 140px;
+    }
+    .intro h3 {
+        padding-top: 30px;
+        font-size: 32px;
+
+    }
+    .menu-card:nth-child(odd) img {
+        width: 55%;
+    }
+    .menu-card:nth-child(even) img {
+        width: 55%;
     }
     .burgers div:nth-child(even) {
         padding-left: 35px;
@@ -1250,441 +1256,608 @@ color: #e4bb7a;
         padding-bottom: 0px; 
     }
     // -----7--------
+    .evening-menu .wrapper {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .intro-menu h4 {
+        padding-top: 25px;
+    }
     .dish {
     padding-left: 18px;
+    }
+    // -----8--------
+    .opening-hours {
+        padding-top: 25px;
+        padding-bottom: 40px;
+    }
+    .opening-hours .wrapper {
+        padding-top: 25px;
+        height: 382px;
+    }
+    .dinner-lunch {
+        padding: 39px;
+    }
+    // -----9--------
+    .chefs {
+        padding: 0;
+    }
+    .our-chefs h3 {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+   // -----10--------
+   .reservations {
+    padding-bottom: 0px;
+   }
+    .reservations h4 {
+        font-size: 32px;
+        padding-top: 50px;
+    }
+    .reservations h3 {
+        font-size: 35px;
+        margin-bottom: 20px;
     }
      // -----11--------
     .citation-slide p {
         margin-left: 20px;
         margin-top: 30px;
     }
-    .citation-slider {
-        height: 39vh;
+    .citation-slider img {
+        margin-top: 25px;
     }
- }
-//  _____________________________________________________________
- @media all and (max-width: 430px){
-    .adress-line {
-    height: 4vh;
-    padding-left: 6px;
-    }
-    .wrapper-preview {
-        height: 59vh;
-    }
-    .main-content {
-        height: 48vh;
-        background-size: auto;
-    }
-    p {
-        font-size: 14px;
-    }
-    h2, h3 {
-        font-size: 32px;
-    }
-    h4 {
+    // -----12--------
+    .customer-feedback h4 {
         font-size: 28px;
+        padding-top: 30px;
     }
-    .maps a {
-        font-size: 11px;
+    .customer-feedback h3 {
+        font-size: 32px;
+        margin-bottom: 25px;
     }
-    .social {
-        margin-right: 10px;
-        width: 33%;
+    .forma h4 {
+        padding: 0px;
+        margin-top: 25px;
+        font-size: 22px;
     }
-    .social svg {
-        width: 9px;
-        margin-left: 8px;
-    }
-    .wrapper .navigation-container {
-        padding-top: 0;
-         
-    }
-    .navigation ul {
-    padding: 0px;
-    }
-    .navigation li {
-        margin-left: 5px;
-        font-size: 10px;
-    }
-    .logotip-header {
-        width: 20px;
-        height: 46px;
-    }
-    .main-content h1 {
-        font-size: 35px;
-    }
-    .main-content .button {
-        width: 140px;
-        height: 34px;
-    }
-     // -----2--------
-    .space-logotip {
-        padding-top: 10px;
-        margin-bottom: 15px;
-    }
-    .gallery__box {
-        display: flex;
-        top: 0%;
-        width: 82%;
-        left: 13%;
-        height: 34vh;
-        align-items: center;
-    }
-    .slider-cards {
-        height: 53vh;
-    }
-    .image-slider__image img {
-        height: 39vh;
+}
+//  _____________________________________________________________
+    @media all and (max-width: 430px){
+        p {  
+        font-size: 14px;
+        }
+        h2, h3 {
+        font-size: 32px;
+        }
+        h4 {
+        font-size: 28px;
+        } 
+        .button {
+            width: 140px;
+            height: 35px;
+        }
+        .wrapper-preview {
+            height: auto;
+        }
+        .button-menu {
+            display: none;
+        }
+        .show-navigation {
+            display: block;
+           top: 0;
+        }
+        .burger-menu {
+            display: contents;
+        }
+        .navigation-container .navigation {
+            display: none;
+        }
+
+    #menu__toggle {
+            opacity: 0;
+          }
+        .burger-menu .menu__btn {
+            display: flex;
+            -webkit-box-align: end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+            position: absolute;
+            top: 3%;
+            right: 8%;
+            width: 21px;
+            height: 25px;
+            cursor: pointer;
+            z-index: 1;
+        }
+    .burger-menu .menu__btn > span,
+    .burger-menu .menu__btn > span::before,
+    .burger-menu .menu__btn > span::after {
+        display: block;
+        position: absolute;
         width: 100%;
+        height: 2px;
+        background-color: #e4bb7a;
     }
-    .gallery__title2 {
+    .burger-menu .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .burger-menu .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 36%;
+        margin: 0;
+        padding: 26px 0px;
+        list-style: none;
+        text-align: center;
+        background-color: #3f3f3f;
+        box-shadow: 1px 0 6px #00000033; 
+    }
+      .menu__item {
+        display: block;
+        padding: 10px 24px;
+        color: #e4bb7a;
+        font-size: 17px;
+        font-weight: 600;
+        text-decoration: none;
+        text-transform: capitalize;
+      }
+      .menu__item:hover {
+        background-color: #fff;
+      }
+      #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        top: 13%;
+      }
+      .adress-line {
+          display: block;
+        height: 5vh;
+        padding-left: 6px;
+        }
+        .social {
+            height: 8px;
+            margin-right: 0px;
+            cursor: pointer;
+        }
+        .main-content {
+            height: auto;
+            align-items: center;
+        }
+        .main-content h2 {
+            margin-top: 25px;
+            margin-bottom: 0px;
+        }
+        .main-content h1 {
+        font-size: 35px;
+        }
+        .main-content .button {
+            width: 140px;
+            margin-bottom: 25px;
+            height: 40px;
+        }
+//      // -----2--------
+       .space-logotip {
+       padding-top: 15px;
+       margin-bottom: 15px;
+    } 
+       .gallery__title2 {
         font-size: 26px;
         padding-bottom: 22px;
         margin-bottom: 8px;
     }
-    .gallery__title1 {
-        font-size: 35px;
-        height: 4px;
-        margin-bottom: 0px;
-    }
     .gallery__text {
-        height: 100px;
-        width: 95%;
+        width: 55%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    .gold__btn {
-        width: 150px;
-        height: 38px;
-        font-size: 14px;
-        margin-bottom: 19px;
-    }
-    // -----3--------
-    .organic__wrapper {
-        height: 37vh;
-    }
+//     // -----3--------
+
     .organic__social {
-        top: 0%;
-        left: 38%;
-    }
-    .organic__icon {
-        margin-left: 11px;
-        padding: 3px;
-    }
-    .organic__icon a img {
-        height: 10px;
-        width: 15px;
-    }
+    top: 3%;
+    left: 28%;
+    } 
     .organic__food {
-        width: 270px;
-        height: 61vh;
-    }
-    .organic__food::after {
-        width: 100%;
-        height: 27vh;
-        top: 1%;
-        left: 0;
-    }
-    .organic__info {
-        padding-top: 0px;
-        width: 100%;
-    }
-    .organic__title {
-        font-size: 20px;
-        margin-top: 11px;
-        letter-spacing: 2px;
-    }
-    .organic__text {
-        color: #4d4d4d;
-        line-height: 1.5;
-        padding: 0;  
-        margin: 0;
-        width: 100%;
-    }
-    .button__organic {
-        width: 130px;
-        height: 30px;
-        margin: 12px 0;
+        width: 345px;
+        margin-bottom: 7px;
     }
     .scroll__mause {
-       display: none;
+    height: 35px;
     }
-     // -----4--------
-     .welcome-section {
-        padding-top: 24px;
-        height: 54vh;
-     }
-    .welcome-section img {
-        width: 270px;
-        height: 402px;
-        margin-left: 0;   
+    .organic__text {
+    color: #4d4d4d;
+    line-height: 1.5;
+    padding: 0;  
+    margin: 0;
+    width: 100%;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+//     // -----4--------
+    
+    .welcome-section {
+    padding-top: 35px;
+    padding-bottom: 35px;
     }
     .welcome-box {
-        height: 39vh;
-        max-width: 229px;
-        padding: 13px 5px 0px 7px;
-        top: 10%;
-    }
+    height: auto;
+    max-width: 204px;
+    padding: 40px 14px 19px 13px;
+    left: 36%;
+    top: 5%;
+    }  
     .welcome-text {
-        line-height: 1.4;
-        padding-top: 12px;
-    }
-    .welcome-title1 {
-        font-size: 32px;
-        text-align: center;;
-    }
-    .welcome-title2 {
-        font-size: 29px;
-        letter-spacing: 2px;
-    }
-    // -----4--------
-    .our-history {
-        height: 29vh;
-    }
-    .our-history .wrapper {
-        height: 28vh;
-        margin-top: 7px;
-        margin-left: 24px;
-        align-items: center;
-    }
-    .our-history h3 {
-        padding-top: 0;
-    }
-    .our-history h2 {
-        padding-top: 0px;
-        margin: 0;
-    }
-    .our-history p {
-        padding-top: 4px;
-        line-height: 17px;
+        font-size: 14px;
+        line-height: 1.5;
+        padding-top: 18px;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         display: -webkit-box;
         overflow: hidden;
     }
-    .our-history .button {
-        width: 138px;
-        height: 33px;
-        margin-left: 0px;
-        margin-top: 11px;
+    .welcome-title1 {
+        font-size: 28px;
+        word-spacing: 8px;
+        margin-top: 0;
+        margin-bottom: 10px;
     }
-    
-    // ----------5---------
-    .quote {
-        height: 14vh;
+    .welcome-title2 {
+        font-size: 32px;
+        letter-spacing: 0px;
+    }
+     // ----------5---------
+     .our-history {
+        background-size: auto;
+    }
+     .history {
+    margin-top: 17px;
+    margin-left: 20px;
+    }
+    .our-history .button {
+        width: 150px;
+        height: 45px;
+        margin: 43px 0 50px 3px;
+    }
+    .our-history p {
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden;
     }
     .quote p:nth-last-child(2) {
-        font-size: 16px;
-        text-align: center;
-        padding-left: 32px;
-        padding-top: 20px;
+    text-align: center;
     }
-    .quote p:nth-last-child(1) {
-        font-size: 33px;
-        padding-top: 10px;
-    }
-    // ----------6---------
-    .burger-menu {
-        height: 88vh;
-    }
-    .intro {
-        height: 12vh;
-    }
+//     // ----------6---------
     .burgers {
-        padding: 0 14px 19px 44px;
-    }
-    .menu-card img {
-        display: none;
+    padding: 0 0px 30px 0px;
+    grid-gap: 20px;
     }
     .burgers div:nth-child(odd) {
-        padding: 10px 16px 0 16px;
-        text-align: center;
+        padding: 20px 20px 25px 25px;
+        margin: 5px;
     }
     .burgers div:nth-child(even) {
-        padding: 10px 16px 0 16px;
-        text-align: center;
-        
+        padding: 20px 25px 25px 20px;
+        margin: 5px;
     }
-    .burgers h3 {
-        margin-top: 15px;
+    .menu-card:nth-child(odd) img {
+        width: 43%;
+        top: 87%;
+        right: 54%;
     }
-    .burgers h4 {
-        margin-top: 14px;
+    .menu-card:nth-child(even) img {
+    width: 45%;
+    top: 85%;
+    left: 54%;
     }
-    .burgers p {
-        font-size: 14px;
-        line-height: 1;
-        padding-top: 20px;
-        padding-bottom: 35px;
-    }
-    .menu-card b {
-        padding-top: 3px;
-        font-size: 20px;
-    }
-    .intro h3 {
-        padding-top: 15px;
-        letter-spacing: 2px;
-        font-size: 29px;
-    }
-    .intro p {
-        padding-top: 0px;
-        letter-spacing: 2px;
-        font-size: 33px;
-    }
-    // ----------7---------
+
+//     // ----------7---------
     .evening-menu .wrapper {
         display: grid;
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(10,1fr);
-        gap: 21px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        margin: 0;
-    }
-    .intro-menu {
-    text-align: center;
-    width: 50vh;
-    }
-
-    .intro-menu p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    }
-    .intro-menu h4 {
-        font-size: 28px;
-        padding-top: 9px;
-    }
-    .intro-menu h3 {
-    font-family: Montserrat-bold,sans-serif;
-    letter-spacing: .7px;
-    font-size: 32px;
-    }
-    .dish {
-        grid-template-columns: none;
-        text-align: left;
-        padding-right: 7px;
-        padding-bottom: 10px;
-    }
-    .dish img {
-       display: none;
+        gap: 10px;
     }
     .dish h3 {
         line-height: 1.5;
-        font-size: 14px;
+        font-size: 13px;
     }
-    .evening-menu {
-        justify-items: flex-start;
-        text-align: left;
-    }
-    .description {
-        grid-column: 1;
-    }
-       // ----------8---------
-       .opening-hours {
-        padding-top: 10px;
-        padding-bottom: 25px;
-    }
-    .opening-hours h4 {
-        font-size: 28px;
-    }
-    .opening-hours h3 {
-        font-size: 32px;
-        padding-left: 0px;
-        word-spacing: 3px;
-    }
+//        // ----------8---------
+    
     .opening-hours .wrapper {
-        height: 47vh;
-        padding-top: 10px;
+    padding-top: 15px;
+    height: 330px;
     }
-       // ----------9---------
-       .chefs {
-        height: 56vh;
-        padding-top: 11px;
+    .opening-hours .wrapper img {
+        width: 60%;
     }
+    .dinner-lunch {
+        padding: 7px;
+    }
+    .working-hours h5, .working-hours p {
+        font-size: 14px;
+        padding-left: 0px;
+        line-height: 20px;
+    }
+//        // ----------9---------
+     
     .our-chefs h4 {
-        font-size: 28px;
-        margin: 0;
+    font-size: 28px;
+    margin-top: 15px;
+    }
+    .chefs-names .staff {
+        width: 27%;
     }
     .staff p {
-    font-size: 14px;
-    width: 100%;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-    overflow: hidden;
+        font-size: 14px;
+        width: 95%;
+        text-align: center;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden;
     }
-    .our-chefs {
-        height: 12vh;
+//       // ----------10---------
+    .reservations-wrapper {
+    max-width: 95%;
+    margin: 15px;
     }
-      // ----------10---------
-      .reservations {
-        padding-bottom: 0px;
+    .reservations h4 {
+    font-size: 28px;
+    padding-top: 25px;
     }
-      .reservations h4 {
-        font-size: 28px;
-        padding-top: 43px;
-    }
-    .reservations h3 {
-        font-size: 32px;
-        word-spacing: 4px;
-        margin-bottom: 16px;
+    .reservations img {
+        margin-bottom: 25px;
     }
     .reservations-wrapper input, .reservations-wrapper select {
-        height: 42px;
-        width: 117px;
+        height: 40px;
+        width: 120px;
         line-height: 1.5;
-        padding: 12px;
-        margin: 9px;
+        padding: 8px;
     }
-     // ----------11---------
-    .citation-slider {
-        height: 39vh;
+    .button-reservations {
+        width: 150px;
+        height: 40px;
+        font-size: 13px;
+        margin: 30px 0 30px 0px;
     }
-    .citation-slider img {
-        margin-top: 33px;
+//      // ----------11---------
+    .citation-slide p {
+    margin-left: 20px;
+    margin-top: 30px;
     }
-    // ----------12---------
-    .customer-feedback h4 {
-        font-size: 28px;
-        padding-top: 14px;
+    .citation-slide h4 {
+        margin-top: 20px;
+        margin-bottom: 15px;
     }
-    .customer-feedback h3 {
-        margin-bottom: 10px;
-        font-size: 32px;
+    .citation-slide h5 {
+        color: #e4bb7a;
+        margin-bottom: 17px;
     }
-    .customer-feedback p {
-        max-width: 84%;
-        line-height: 24px;
-        margin-top: 15px;
-    }
-    .stars {
-        margin-top: 5px;
-    }
-    .customer-feedback h5 {
-        margin-top: 17px;
-        letter-spacing: 2.5px;
-    }
-    .forma h4 {
-        margin-top: 13px;
-        letter-spacing: 2px;
-    }
+//     // ----------12---------
     .forma img {
-        margin: 17px 0 14px;
+    margin: 20px 0 20px;
+    }
+    .send {
+        flex-direction: column;
     }
     .email {
-        height: 30px;
-        width: 167px;
-        padding: 5px;
+        height: 20px;
+        width: 200px;
+        font-size: 14px;
+        padding: 10px;
+        margin-bottom: 15px;
     }
     .subscribe input {
-        width: 148px;
-        height: 43px;
-        margin: 0 0 20px 21px;
+        font-family: Montserrat-bold,sans-serif;
+        width: 160px;
+        height: 40px;
+        font-size: 14px;
+        margin: 0 0 25px 0px;
     }
- }
- 
-
-
- 
+}
+@media all and (max-width: 320px){
+       // ----------1---------
+    .maps {
+    max-width: 204px;
+    }
+    .maps a {
+        text-decoration: none;
+        font-size: 12px;
+        color: #000;
+        font-weight: 600;
+    }
+    .adress-line {
+        display: flex;
+        height: 6vh;
+        padding-left: 6px;
+    }
+    .social {
+        margin-right: 14px;
+        margin-top: 7px;
+    }
+    .main-content h2 {
+        margin-top: 15px;
+        font-size: 32px;
+    }
+    .main-content h1 {
+        font-size: 33px;
+    }
+    .arrow-main-content {
+        margin-bottom: 20px;
+    } 
+    .main-content p {
+    text-align: center;
+    }
+    .scroll-down img {
+        height: 18px;
+    }
+    .scroll-down {
+        margin-bottom: 13px;
+    }
+       // ----------2---------
+       .gallery__box {
+        height: 38vh;
+        align-items: center;
+         margin-left: -15px;
+       }
+       .gallery__title2 {
+        font-size: 26px;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+       .gallery__title1 {
+        font-size: 32px;
+        word-spacing: 6px;
+        margin-bottom: 0;
+        margin-top: 0px;
+    }
+    .gold__btn {
+        margin-bottom: 40px;
+    }
+   // ----------3---------
+    .space2 {
+        text-align: center;
+        padding-left: 21px;
+        padding-top: 10px;
+        background-color: #fff;
+        padding-bottom: 10px;
+    }
+    .organic__icon {
+        margin-left: 14px;
+        padding: 6px;
+    }
+    .organic__food {
+        max-width: 248px;
+        margin-bottom: 25px;
+    }
+    .organic__title {
+        font-size: 31px;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    .button__organic {
+        width: 145px;
+        height: 40px;
+        font-size: 14px;
+        margin: 20px 0 20px 0;
+    }
+    .scroll__mause {
+       display: none;
+    }
+    // ----------4---------
+    .welcome-box {
+        max-width: 203px;
+        padding: 17px 10px 10px 11px;
+        left: 15%;
+        top: 17%;
+    }
+    // ----------5---------
+    .our-history h3 {
+        font-size: 43px;
+        color: #4d4d4d;
+    }
+    .quote p:nth-last-child(2) {
+        text-align: center;
+        font-size: 18px;
+        padding-top: 20px;
+    }
+     // ----------6---------
+    .intro h3 {
+        padding-top: 15px;
+        font-size: 32px;
+    }
+    .burgers {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .burgers div:nth-child(odd) {
+        padding: 26px 18px 55px 17px;
+        margin: 19px;
+    }
+    .burgers div:nth-child(even) {
+        padding-bottom: 25px;
+        margin: 19px;
+    }
+    // ----------7---------
+    .intro-menu p {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        line-height: 20px;
+        max-width: 266px;
+    }
+    // ----------8---------
+    .opening-hours h3 {
+        font-size: 32px;
+    }
+    .opening-hours .wrapper {
+        height: 300px;
+    }
+    .dinner-lunch {
+        padding: 0px;
+    }
+    .working-hours h5:nth-child(odd) {
+        margin-top: 19px;
+    }
+    .working-hours h5:nth-child(even) {
+        margin-top: 8px;
+    }
+// ----------9---------
+    .our-chefs h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .chefs-names .staff {
+        width: 31%;
+    }
+    .reservations-wrapper {
+        max-width: 100%;
+        margin: 0px;
+    }
+    .reservations-wrapper input, .reservations-wrapper select {
+        height: 35px;
+        width: 100px;
+    }
+    .button-reservations {
+        width: 140px;
+        height: 40px;
+        margin: 15px 0 15px 0;
+    }
+    .citation-slide p {
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden;
+    }
+    .citation-slide h5 {
+        color: #e4bb7a;
+        margin-bottom: 15px;
+    }
+// ----------12---------
+    .customer-feedback p {
+        max-width: 68%;
+        line-height: 22px;
+        margin-top: 25px;
+    }
+}

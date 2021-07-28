@@ -17,7 +17,7 @@
         <div class="adress-line">
             <div class="maps">
                 <a href="#">
-                    <img src="./img/Point.png" alt="gps">
+                    <img class="point-maps" src="./img/Point.png" alt="gps">
                     New Scotland Yard, 8-10 Broadway, Westminster, London SW1H 0BG</a>
             </div>
             <div class="social">
@@ -79,6 +79,20 @@
                     <button class="button-menu">
                         <img src="./img/burger.png" alt="icon burger">
                     </button>
+                    <div class="burger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                          <span></span>
+                        </label>
+                        <ul class="menu__box">
+                          <li><a class="menu__item" href="#">home</a></li>
+                          <li><a class="menu__item" href="#reservation">reservations</a></li>
+                          <li><a class="menu__item" href="#menu">menu</a></li>
+                          <li><a class="menu__item" href="#blog">blog</a></li>
+                          <li><a class="menu__item" href="#features">features</a></li>
+                          <li><a class="menu__item" href="#contact">contact</a></li>
+                        </ul>
+                      </div>
                 </div>
             </nav>
         </header>
@@ -106,9 +120,10 @@
         <div class="slider-wrapper">
             <div class="image-slider swiper-container">
                 <div class="image-slider__wrapper swiper-wrapper">
+
                     <div class="image-slider__slide swiper-slide">
                         <div class="image-slider__image">
-                            <img src="./img/sviper1.jpg" alt="sviper1">
+                            <!-- <img src="./img/sviper1.jpg" alt="sviper1"> -->
                             <div class="gallery__box">
                                 <h2 class="gallery__title1">The best cuisine</h2>
                                 <h3 class="gallery__title2">In your town</h3>
@@ -122,7 +137,7 @@
                     </div>
                     <div class="image-slider__slide swiper-slide">
                         <div class="image-slider__image">
-                            <img src="./img/sviper2.jpg" alt="sviper2">
+                            <!-- <img src="./img/sviper2.jpg" alt="sviper2"> -->
                             <div class="gallery__box">
                                 <h2 class="gallery__title1">The best cuisine</h2>
                                 <h3 class="gallery__title2">In your town</h3>
@@ -136,7 +151,7 @@
                     </div>
                     <div class="image-slider__slide swiper-slide">
                         <div class="image-slider__image">
-                            <img src="./img/sviper3.jpg" alt="sviper3">
+                            <!-- <img src="./img/sviper3.jpg" alt="sviper3"> -->
                             <div class="gallery__box">
                                 <h2 class="gallery__title1">The best cuisine</h2>
                                 <h3 class="gallery__title2">In your town</h3>
@@ -144,13 +159,13 @@
                                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 </p>
-                                <button type="button" class="gold-btn">Menu</button>
+                                <button type="button" class="gold__btn">Menu</button>
                             </div>
                         </div>
                     </div>
                     <div class="image-slider__slide swiper-slide">
                         <div class="image-slider__image">
-                            <img src="./img/sviper4.jpg" alt="sviper4">
+                            <!-- <img src="./img/sviper4.jpg" alt="sviper4"> -->
                             <div class="gallery__box">
                                 <h2 class="gallery__title1">The best cuisine</h2>
                                 <h3 class="gallery__title2">In your town</h3>
@@ -158,13 +173,13 @@
                                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 </p>
-                                <button type="button" class="gold-btn">Menu</button>
+                                <button type="button" class="gold__btn">Menu</button>
                             </div>
                         </div>
                     </div>
                     <div class="image-slider__slide swiper-slide">
                         <div class="image-slider__image">
-                            <img src="./img/sviper5.jpg" alt="sviper5">
+                            <!-- <img src="./img/sviper5.jpg" alt="sviper5"> -->
                             <div class="gallery__box">
                                 <h2 class="gallery__title1">The best cuisine</h2>
                                 <h3 class="gallery__title2">In your town</h3>
@@ -172,7 +187,7 @@
                                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 </p>
-                                <button type="button" class="gold-btn">Menu</button>
+                                <button type="button" class="gold__btn">Menu</button>
                             </div>
                         </div>
                     </div>
@@ -186,24 +201,23 @@
     </section>
 
     <!--_________________________________________ section 3 -->
-    <div class="space2">
-        <img src="./img/Logo2.png" alt="logotip">
-    </div>
 
-    <section class="organic__wrapper">
-        <div class="organic__social">
-            <p class="organic__icon">
-                <a href="#"><img src="./img/pinterest.png" alt="pinterest"></a>
-            </p>
-            <p class="organic__icon">
-                <a href="#"><img src="./img/be.png" alt="behance"></a>
-            </p>
-            <p class="organic__icon"><a href="#"><img src="./img/insta.png" alt="scroll down"></a>
-            </p>
+    <section class="restaurant-organic">
+        <div class="space2">
+            <img src="./img/Logo2.png" alt="logotip">
         </div>
-
-        <div id="features" class="organic__food">
-            <div class="organic__info">
+        <div class="organic__wrapper">
+            <div class="organic__social">
+                <p class="organic__icon">
+                    <a href="#"><img src="./img/pinterest.png" alt="pinterest"></a>
+                </p>
+                <p class="organic__icon">
+                    <a href="#"><img src="./img/be.png" alt="behance"></a>
+                </p>
+                <p class="organic__icon"><a href="#"><img src="./img/insta.png" alt="scroll down"></a>
+                </p>
+            </div>
+            <div class="organic__food">
                 <div class="organic__info">
                     <h2 class="organic__title">Organic food</h2>
                     <img src="./img/arrow.png" class="organic__arrow" alt="arrow picture">
@@ -215,36 +229,47 @@
                     <button class="button__organic">Menu</button>
                 </div>
             </div>
+            <a class="scroll__mause" href="#"><img src="./img/Scroll.png" alt="scroll mause"></a>
         </div>
-        <a class="scroll__mause" href="#"><img src="./img/Scroll.png" alt="scroll mause"></a>
     </section>
     <!--_________________________________________ section 4 -->
 
 
     <div class="welcome-section">
-        <img class="welcome-section-img1" src="./img/steik-velcome1.jpg" alt="steik-welcome">
-        <img class="welcome-section-img2" src="./img/sup-velcome2.jpg" alt="sup-welcome">
-        <div class="welcome-box">
-            <h3 class="welcome-title1">Welcome to</h3>
-            <h2 class="welcome-title2">Steakville</h2>
-            <p class="welcome-text">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.I am
-                text block. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Ut elit tellus, luctus nec</p>
+        <div class="wrapper">
+            <img class="welcome-section-img1" src="./img/steik-velcome1.jpg" alt="steik-welcome">
+            <img class="welcome-section-img2" src="./img/sup-velcome2.jpg" alt="sup-welcome">
+
+            <div class="welcome-box">
+
+                <h3 class="welcome-title1">Welcome to</h3>
+                <h2 class="welcome-title2">Steakville</h2>
+                <p class="welcome-text">I am text block. Click edit button to change this text. Lorem ipsum dolor sit
+                    amet,
+                    consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.I
+                    am
+                    text block. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Ut elit tellus, luctus nec</p>
+            </div>
         </div>
+    </div>
     </div>
     <!--_________________________________________ section 5 -->
 
     <section class="our-history">
         <div class="wrapper">
-            <h3>Discover</h3>
-            <h2>our history</h2>
-            <img src="./img/arrow.png" alt="arrow">
-            <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.I am text block.I
-                am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Ut elit tellus, luctus nec</p>
-            <button type="button" class="button">ABOUT US</button>
+            <div class="history">
+                <h3>Discover</h3>
+                <h2>our history</h2>
+                <img src="./img/arrow.png" alt="arrow">
+                <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.I am text
+                    block.I
+                    am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing
+                    elit. Ut elit tellus, luctus nec</p>
+                <button type="button" class="button">ABOUT US</button>
+            </div>
         </div>
     </section>
     <div class="quote">
@@ -406,13 +431,14 @@
         <div class="wrapper">
             <img src="./img/restaurant.jpg" alt="Restaurant">
             <div class="working-hours">
-                <h5 class="hours__meal">Dinner :</h5>
-                <p>Tuesday to Saturday 5.30 pm til 9.00 pm</p>
-                <p>Bank Holiday Sundays 6pm to 9 pm</p>
-                <h5 class="hours__meal">Lunch :</h5>
-                <p>Friday 12.30 til 2.30 pm</p>
-                <p>Sunday 12.30 til 4.30 pm</p>
-
+                <div class="dinner-lunch">
+                    <h5 class="hours__meal">Dinner :</h5>
+                    <p>Tuesday to Saturday 5.30 pm til 9.00 pm</p>
+                    <p>Bank Holiday Sundays 6pm to 9 pm</p>
+                    <h5 class="hours__meal">Lunch :</h5>
+                    <p>Friday 12.30 til 2.30 pm</p>
+                    <p>Sunday 12.30 til 4.30 pm</p>
+                </div>
             </div>
         </div>
 
