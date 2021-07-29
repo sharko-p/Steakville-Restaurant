@@ -31,13 +31,14 @@ body {
     cursor: pointer;
 }
 .wrapper-preview {    
-    height: 100vh;    
+    height: 100vh; 
+    position: relative;   
     // background-repeat: no-repeat;
     // background-size: cover;
     box-sizing: border-box;
 }
 .adress-line {
-    height: 3vh;
+    height: 24px;;
     padding-top: 5px;
     display: flex;
     justify-content: space-between;
@@ -66,6 +67,7 @@ body {
     height: 13px;
     margin-right: 25px; 
     cursor: pointer;
+    position: relative;
    }
 .social svg {
     width: 13px;
@@ -1161,7 +1163,7 @@ color: #e4bb7a;
     }
     // -----2--------
     .gallery__box {
-        height: none;
+        height: auto;
         margin-left: 25px;
     }
     .gallery__title1 {
@@ -1400,6 +1402,7 @@ color: #e4bb7a;
         text-align: center;
         background-color: #3f3f3f;
         box-shadow: 1px 0 6px #00000033; 
+        z-index: 101;
     }
       .menu__item {
         display: block;
@@ -1436,6 +1439,7 @@ color: #e4bb7a;
         .social {
             height: 8px;
             margin-right: 0px;
+            text-align: center;
             cursor: pointer;
         }
         .main-content {
@@ -1688,7 +1692,7 @@ color: #e4bb7a;
     }
     .adress-line {
         display: flex;
-        height: 6vh;
+        height: 35px;
         padding-left: 6px;
     }
     .social {
