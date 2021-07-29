@@ -38,7 +38,7 @@ body {
     box-sizing: border-box;
 }
 .adress-line {
-    height: 24px;;
+    height: 3vh;
     padding-top: 5px;
     display: flex;
     justify-content: space-between;
@@ -1433,7 +1433,7 @@ color: #e4bb7a;
       }
       .adress-line {
           display: block;
-        height: 5vh;
+        height: 6vh;
         padding-left: 6px;
         }
         .social {
@@ -1693,7 +1693,6 @@ color: #e4bb7a;
     }
     .adress-line {
         display: flex;
-        height: 35px;
         padding-left: 6px;
     }
     .social {

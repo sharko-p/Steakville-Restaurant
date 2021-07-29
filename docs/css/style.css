@@ -451,7 +451,7 @@ body {
 }
 
 .adress-line {
-  height: 24px;
+  height: 3vh;
   padding-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2121,7 +2121,7 @@ body {
 
   .adress-line {
     display: block;
-    height: 5vh;
+    height: 6vh;
     padding-left: 6px;
   }
 
@@ -2427,7 +2427,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 35px;
     padding-left: 6px;
   }
 
