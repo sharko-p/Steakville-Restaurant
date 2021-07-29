@@ -1601,6 +1601,7 @@ color: #e4bb7a;
         font-size: 14px;
         padding-left: 0px;
         line-height: 20px;
+        padding-bottom: 8px;
     }
 //        // ----------9---------
      
@@ -1818,6 +1819,9 @@ color: #e4bb7a;
     }
     .dinner-lunch {
         padding: 0px;
+    }
+    .working-hours h5, .working-hours p {
+        padding-bottom: 0px;
     }
     .working-hours h5:nth-child(odd) {
         margin-top: 19px;

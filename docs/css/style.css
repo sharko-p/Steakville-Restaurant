@@ -2317,6 +2317,7 @@ body {
     font-size: 14px;
     padding-left: 0px;
     line-height: 20px;
+    padding-bottom: 8px;
   }
 
   .our-chefs h4 {
@@ -2575,6 +2576,11 @@ body {
 
   .dinner-lunch {
     padding: 0px;
+  }
+
+  .working-hours h5,
+  .working-hours p {
+    padding-bottom: 0px;
   }
 
   .working-hours h5:nth-child(odd) {
