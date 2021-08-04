@@ -437,12 +437,6 @@ body {
   font-family: "Average",sans-serif;
 }
 
-.maps a {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
 .wrapper-preview {
   height: 100vh;
   position: relative;
@@ -451,7 +445,6 @@ body {
 }
 
 .adress-line {
-  height: 3vh;
   padding-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -463,7 +456,7 @@ body {
   padding-left: 21px;
 }
 
-.maps:hover {
+.adress-line .maps:hover {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
@@ -477,26 +470,36 @@ body {
   color: white;
 }
 
-.maps a {
+.adress-line .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.adress-line a {
   text-decoration: none;
   font-size: 13px;
   color: #000;
   font-weight: 800;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-.social {
-  height: 13px;
+.adress-line ul {
   margin-right: 25px;
   cursor: pointer;
   position: relative;
 }
 
-.social svg {
+.social li {
   width: 13px;
-  margin-left: 13px;
+  list-style-type: none;
+  margin-right: 15px;
 }
 
-.social svg:hover {
+.social li a:hover {
   background-color: #fff;
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -524,7 +527,7 @@ body {
   border: none;
 }
 
-.logotip img {
+.logotip-header img {
   position: absolute;
   top: 24px;
   left: 25px;
@@ -595,7 +598,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 89vh;
+  height: 90vh;
   background-image: url(../img/vine-and-steak.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -618,6 +621,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .main-content h2 {
@@ -673,7 +677,8 @@ body {
   height: 25px;
   cursor: pointer;
   padding: 0;
-  margin-bottom: 40px;
+  position: absolute;
+  top: 82%;
 }
 
 .scroll-down a {
@@ -689,7 +694,7 @@ body {
   width: 100%;
   padding: 0;
   padding-top: 30px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .slider-wrapper {
@@ -699,7 +704,6 @@ body {
 }
 
 .gallery__box {
-  height: 85vh;
   max-width: 1220px;
   margin-left: auto;
   margin-right: auto;
@@ -718,6 +722,8 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-left: 40px;
+  margin-bottom: 242px;
 }
 
 .gallery__title1 {
@@ -727,7 +733,6 @@ body {
   font-weight: 500;
   word-spacing: 18px;
   margin-bottom: 0px;
-  margin-left: 29px;
 }
 
 .gallery__title2 {
@@ -737,7 +742,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #fff;
-  margin: 0 0 27px 20px;
+  margin-bottom: 27px;
 }
 
 .gallery__text {
@@ -746,7 +751,7 @@ body {
   line-height: 1.8;
   text-align: left;
   width: 32%;
-  margin: 0 0 42px 24px;
+  margin-bottom: 42px;
 }
 
 .gold__btn {
@@ -758,7 +763,6 @@ body {
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 700;
-  margin-bottom: 242px;
   margin-left: 24px;
   border: none;
   outline-color: #121212;
@@ -824,12 +828,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 85px;
+  padding-bottom: 122px;
 }
 
 .organic__social {
   position: absolute;
   top: 26%;
   left: 1%;
+  padding: 0px;
+  list-style-type: none;
 }
 
 .organic__icon:hover {
@@ -841,23 +849,21 @@ body {
   transition: 1s;
 }
 
-.organic__icon {
+.organic__social li {
   border: 1px solid #000;
   border-radius: 50%;
   margin-bottom: 30px;
   padding: 11px;
 }
 
-.organic__icon a img {
+.organic__icon img {
   height: 11px;
   width: 16px;
 }
 
 .organic__food {
-  width: 710px;
+  max-width: 710px;
   border: 6px solid #fff;
-  margin-top: 85px;
-  margin-bottom: 122px;
 }
 
 .organic__info {
@@ -909,7 +915,8 @@ body {
 
 .scroll__mause {
   width: 25px;
-  margin-bottom: 3%;
+  position: absolute;
+  top: 88%;
 }
 
 .welcome-section {
@@ -999,9 +1006,6 @@ body {
 }
 
 .our-history {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   background-image: url(../img/bg-history.jpg);
   background-repeat: no-repeat;
@@ -1016,9 +1020,9 @@ body {
           box-sizing: border-box;
 }
 
-.history {
-  max-width: 1170px;
-  margin-top: 108px;
+.our-history .history {
+  max-width: 12200px;
+  padding-top: 108px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1029,6 +1033,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-left: 25px;
 }
 
 .our-history h3 {
@@ -1098,7 +1103,7 @@ body {
   margin: 0px;
   font-size: 36px;
   color: #fff;
-  padding-top: 135px;
+  padding-top: 90px;
 }
 
 .quote p:nth-last-child(1) {
@@ -1410,6 +1415,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 36px;
+  margin-bottom: 93px;
 }
 
 .our-chefs h4 {
@@ -1419,7 +1426,6 @@ body {
   font-weight: 500;
   font-size: 50px;
   margin: 0px;
-  margin-top: 36px;
 }
 
 .our-chefs h3 {
@@ -1428,7 +1434,6 @@ body {
   word-spacing: 6px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 93px;
   color: #fff;
 }
 
@@ -1460,27 +1465,34 @@ body {
           align-items: center;
 }
 
-.photo {
+.staff .photo {
   border-radius: 50%;
   width: 85%;
+  height: 270px;
+  margin-bottom: 41px;
 }
 
-.chefs-names .staff h5 {
+.chefs-names h5 {
   font-family: "Montserrat-bold" ,sans-serif;
   font-size: 19px;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
   color: #fff;
-  padding-top: 41px;
 }
 
-.social-line {
+.staff .social-line {
   margin-bottom: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
 }
 
-.social-line a {
+.social-line li {
   width: 16px;
+  list-style-type: none;
+  margin-left: 12px;
 }
 
 .social-line img:hover {
@@ -1495,6 +1507,7 @@ body {
 
 .social-line img {
   width: 16px;
+  height: 16px;
   margin-right: 10px;
 }
 
@@ -1579,7 +1592,7 @@ body {
   color: #fff;
 }
 
-.button-reservations {
+.button-reservations input {
   font-family: Montserrat-bold,sans-serif;
   width: 171px;
   height: 50px;
@@ -1587,10 +1600,10 @@ body {
   text-transform: uppercase;
   font-size: 15px;
   border: none;
-  margin: 51px 0 46px 8px;
+  margin: 51px 0 0 8px;
 }
 
-.button-reservations:hover {
+.button-reservations input:hover {
   color: #e4bb7a;
   background-color: white;
   -webkit-transition: 0.5s;
@@ -1798,7 +1811,7 @@ body {
 
   .gallery__box {
     height: auto;
-    margin-left: 25px;
+    margin-bottom: 80px;
   }
 
   .gallery__title1 {
@@ -1815,7 +1828,6 @@ body {
     width: 150px;
     height: 40px;
     font-size: 14px;
-    margin-bottom: 70px;
     margin-left: 24px;
   }
 
@@ -1933,8 +1945,16 @@ body {
     padding: 39px;
   }
 
+  .staff .photo {
+    height: 160px;
+  }
+
   .chefs {
     padding: 0;
+  }
+
+  .our-chefs {
+    margin-bottom: 0;
   }
 
   .our-chefs h3 {
@@ -2119,14 +2139,26 @@ body {
     top: 13%;
   }
 
-  .adress-line {
-    display: block;
-    height: 6vh;
-    padding-left: 6px;
+  .maps {
+    width: 70%;
   }
 
-  .social {
-    height: 8px;
+  .adress-line .maps {
+    font-size: 12px;
+  }
+
+  .adress-line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 7px;
+  }
+
+  .adress-line .social {
+    width: 25%;
     margin-right: 0px;
     text-align: center;
     cursor: pointer;
@@ -2148,21 +2180,29 @@ body {
     font-size: 35px;
   }
 
+  .main-content p {
+    text-align: center;
+    max-width: 280px;
+  }
+
   .main-content .button {
     width: 140px;
     margin-bottom: 25px;
     height: 40px;
   }
 
+  .scroll-down {
+    display: none;
+  }
+
   .space-logotip {
     padding-top: 15px;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
   }
 
   .gallery__title2 {
     font-size: 26px;
-    padding-bottom: 22px;
-    margin-bottom: 8px;
+    margin: 0;
   }
 
   .gallery__text {
@@ -2171,6 +2211,10 @@ body {
     overflow: hidden;
     -o-text-overflow: ellipsis;
        text-overflow: ellipsis;
+  }
+
+  .gallery__title1 {
+    font-size: 32px;
   }
 
   .organic__social {
@@ -2261,29 +2305,31 @@ body {
   }
 
   .burgers {
-    padding: 0 0px 30px 0px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
+    padding: 0 0px 30px 0px;
   }
 
   .burgers div:nth-child(odd) {
     padding: 20px 20px 25px 25px;
-    margin: 5px;
+    margin: 15px;
   }
 
   .burgers div:nth-child(even) {
     padding: 20px 25px 25px 20px;
-    margin: 5px;
+    margin: 15px;
   }
 
   .menu-card:nth-child(odd) img {
-    width: 43%;
-    top: 87%;
+    width: 35%;
+    top: 66%;
     right: 54%;
   }
 
   .menu-card:nth-child(even) img {
-    width: 45%;
-    top: 85%;
+    width: 35%;
+    top: 66%;
     left: 54%;
   }
 
@@ -2320,13 +2366,53 @@ body {
     padding-bottom: 8px;
   }
 
+  .working-hours h5:nth-child(odd) {
+    margin-top: 0;
+  }
+
+  .working-hours h5:nth-child(even) {
+    margin-top: 0;
+  }
+
+  .our-chefs {
+    margin: 0;
+  }
+
+  .chefs .chefs-names {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
   .our-chefs h4 {
     font-size: 28px;
     margin-top: 15px;
   }
 
   .chefs-names .staff {
-    width: 27%;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .staff .photo {
+    width: 66%;
+    height: 240px;
+  }
+
+  .chefs-names h5 {
+    margin-top: 20px;
+  }
+
+  .staff span {
+    margin-bottom: 10px;
+  }
+
+  .social-line {
+    margin-bottom: 10px;
   }
 
   .staff p {
@@ -2340,8 +2426,22 @@ body {
   }
 
   .reservations-wrapper {
-    max-width: 95%;
+    max-width: 100%;
     margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .reservations {
+    padding-bottom: 25px;
   }
 
   .reservations h4 {
@@ -2356,16 +2456,17 @@ body {
   .reservations-wrapper input,
   .reservations-wrapper select {
     height: 40px;
-    width: 120px;
+    width: 175px;
     line-height: 1.5;
     padding: 8px;
+    margin: 5px;
   }
 
-  .button-reservations {
-    width: 150px;
+  .button-reservations input {
+    width: 175px;
     height: 40px;
     font-size: 13px;
-    margin: 30px 0 30px 0px;
+    margin: 30px 0 0 0px;
   }
 
   .citation-slide p {
@@ -2416,9 +2517,9 @@ body {
     max-width: 204px;
   }
 
-  .maps a {
+  .adress-line .maps {
     text-decoration: none;
-    font-size: 12px;
+    font-size: 10px;
     color: #000;
     font-weight: 600;
   }
@@ -2430,9 +2531,9 @@ body {
     padding-left: 6px;
   }
 
-  .social {
-    margin-right: 14px;
+  .adress-line .social {
     margin-top: 7px;
+    width: 28%;
   }
 
   .main-content h2 {
@@ -2493,6 +2594,10 @@ body {
     padding-bottom: 10px;
   }
 
+  .organic__social {
+    left: 21%;
+  }
+
   .organic__icon {
     margin-left: 14px;
     padding: 6px;
@@ -2538,16 +2643,6 @@ body {
     padding-top: 20px;
   }
 
-  .intro h3 {
-    padding-top: 15px;
-    font-size: 32px;
-  }
-
-  .burgers {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
   .burgers div:nth-child(odd) {
     padding: 26px 18px 55px 17px;
     margin: 19px;
@@ -2556,6 +2651,11 @@ body {
   .burgers div:nth-child(even) {
     padding-bottom: 25px;
     margin: 19px;
+  }
+
+  .intro h3 {
+    padding-top: 15px;
+    font-size: 32px;
   }
 
   .intro-menu p {
@@ -2595,10 +2695,6 @@ body {
     margin-bottom: 20px;
   }
 
-  .chefs-names .staff {
-    width: 31%;
-  }
-
   .reservations-wrapper {
     max-width: 100%;
     margin: 0px;
@@ -2606,14 +2702,12 @@ body {
 
   .reservations-wrapper input,
   .reservations-wrapper select {
-    height: 35px;
-    width: 100px;
+    height: 40px;
   }
 
-  .button-reservations {
-    width: 140px;
+  .button-reservations input {
     height: 40px;
-    margin: 15px 0 15px 0;
+    margin: 15px 0 0 0;
   }
 
   .citation-slide p {
