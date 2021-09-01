@@ -103,7 +103,7 @@ body {
     left: 25px;
     cursor: pointer;
 }
-.burger-menu {
+.navigation-container .wrapper {
     display: none;
 }
 .wrapper .navigation-container {
@@ -217,7 +217,7 @@ body {
 //    ____________________________________ section 2
 
 .slider-cards {
-    // max-width: 100%;
+   
     // padding-left: 15px;
     // padding-right: 15px;
     // margin-left: auto;
@@ -228,14 +228,14 @@ body {
 .space-logotip {
     text-align: center;
     width: 100%;
-    padding: 0;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 0 30px 0;
 }
 .slider-wrapper {
     background-image: url("../img/sviper1.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    overflow: hidden;
     
 }
 // .image-slider {
@@ -248,23 +248,24 @@ body {
 //   }
   
 // .image-slider__image img {
-//     width: 100%;
+// max-width: 100%;
 //     opacity: .9;
 //     width: 91%;
 //     height: 85vh;
 //     object-fit: cover;
-
 // }
+
+
   .gallery__box {
     // z-index: 10;
     // position: absolute;
     // top: 18%;
-    // width: 34%;
+    max-width: 1220px;
+    height: 85vh;
     // left: 6%;
     // display: flex;
     // flex-direction: column;
     // align-items: flex-start;
-    max-width: 1220px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
@@ -1031,12 +1032,13 @@ text-align: center;
 .swiper-cont {
     position: relative;
     height: 230px;
-    width: 83%;
+    width: 95%;
     text-align: center;
     max-width: 1220px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .citation-slide p {
@@ -1064,7 +1066,7 @@ text-align: center;
 }
 .citation-slider .swiper-pagination {
     position: absolute;
-    top: 93%;  
+    top: 85%;  
 }
 .citation-slider .swiper-pagination-bullet {
     width: 4px;
@@ -1370,86 +1372,105 @@ color: #e4bb7a;
         .burger-menu {
             display: contents;
         }
+        .burger-menu {
+            width: 180px;
+            height: 120px;
+            cursor: pointer;
+
+        }
         .navigation-container .navigation {
             display: none;
         }
 
-    #menu__toggle {
-            opacity: 0;
-          }
-        .burger-menu .menu__btn {
-            display: flex;
-            -webkit-box-align: end;
-            -ms-flex-align: end;
-            align-items: flex-end;
-            position: absolute;
-            top: 3%;
-            right: 8%;
-            width: 21px;
-            height: 25px;
-            cursor: pointer;
-            z-index: 1;
-        }
-    .burger-menu .menu__btn > span,
-    .burger-menu .menu__btn > span::before,
-    .burger-menu .menu__btn > span::after {
+    // #menu__toggle {
+    //         opacity: 0;
+    //       }
+
+
+    .navigation-container .wrapper {     
+        display: block;   
+        margin: auto;
+        width: 360px;
+        background-color: transparent;
+        position: relative;
+        color: #fff;
+        text-align: center;
+        height: 47px; 
+        z-index: 10;       
+    }
+    #check-menu {
+        display: none;
+    }
+    label {
         display: block;
         position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: #e4bb7a;
-    }
-    .burger-menu .menu__btn > span::before {
-        content: '';
-        top: -8px;
-    }
-    .burger-menu .menu__btn > span::after {
-        content: '';
-        top: 8px;
-    }
-    .menu__box {
-        display: block;
-        position: fixed;
-        visibility: hidden;
         top: 0;
         left: 0;
         width: 100%;
-        height: 36%;
-        margin: 0;
-        padding: 26px 0px;
-        list-style: none;
-        text-align: center;
-        background-color: #3f3f3f;
-        box-shadow: 1px 0 6px #00000033; 
-        z-index: 101;
+        height: 100%;
+        cursor: pointer;
+        z-index: 10;
+        line-height: 40px;
+       
     }
-      .menu__item {
-        display: block;
-        padding: 10px 24px;
-        color: #e4bb7a;
-        font-size: 17px;
-        font-weight: 600;
-        text-decoration: none;
-        text-transform: capitalize;
-      }
-      .menu__item:hover {
+    .wrapper .burger-line {
+        position: absolute;
+        top: 2px;
+        right: 10px;
+        width: 30px;
+        height: 2px;
         background-color: #fff;
-      }
-      #menu__toggle:checked ~ .menu__btn > span {
+        transition: .5s all;
+    }
+    .wrapper .second {
+        top: 12px;
+    }
+    .wrapper .third {
+        top: 12px;
+    }
+    .wrapper .fourth {
+        top: 22px;
+    }
+   
+    .main-menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        max-height: 0;
+        font-size: 0;
+        overflow: hidden;
+        transition: .5s all;
+        cursor: pointer;
+    }
+    .main-menu a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+        border-top: 1px solid #3f3f3f;
+        background-color: #000;
+        text-transform: uppercase;
+    }
+    #check-menu:checked ~ .main-menu {
+        max-height: 500px;
+        font-size: 16px; 
+    }
+    #check-menu:checked ~ .first {
+        display: none;
+    }
+    #check-menu:checked ~ .second {
         transform: rotate(45deg);
-      }
-      #menu__toggle:checked ~ .menu__btn > span::before {
-        top: 0;
-        transform: rotate(0);
-      }
-      #menu__toggle:checked ~ .menu__btn > span::after {
-        top: 0;
-        transform: rotate(90deg);
-      }
-      #menu__toggle:checked ~ .menu__box {
-        visibility: visible;
-        top: 13%;
-      }
+    }
+    #check-menu:checked ~ .third {
+        transform: rotate(-45deg);
+    }
+    #check-menu:checked ~ .fourth {
+        display: none;
+    }
       .maps {
           width: 70%;
       }
@@ -1467,7 +1488,6 @@ color: #e4bb7a;
             text-align: center;
             cursor: pointer;
         }
-        
         .main-content {
             height: auto;
             align-items: center;
@@ -1496,6 +1516,9 @@ color: #e4bb7a;
        padding-top: 15px;
        padding-bottom: 15px;
     } 
+    .gallery__box {
+        margin-top: 35px;
+    }
        .gallery__title2 {
         font-size: 26px;
         margin: 0;
@@ -1632,7 +1655,7 @@ color: #e4bb7a;
         width: 60%;
     }
     .dinner-lunch {
-        padding: 7px;
+        padding: 8px;
     }
     .working-hours h5, .working-hours p {        
         font-size: 14px;
@@ -1666,8 +1689,8 @@ color: #e4bb7a;
         margin-bottom: 60px;
     }
     .staff .photo {
-        width: 66%;
-        height: 240px;
+        width: 60%;
+        height: 50%;
     }
     .chefs-names h5 {
         margin-top: 20px;
@@ -1790,6 +1813,9 @@ color: #e4bb7a;
     }
     .scroll-down {
         margin-bottom: 13px;
+    }
+    .navigation-container .wrapper {
+        width: 320px;
     }
        // ----------2---------
        .gallery__box {

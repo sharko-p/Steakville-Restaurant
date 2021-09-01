@@ -22,6 +22,10 @@ new Swiper('.image-slider', {
     },
         speed: 1000,
 
+
+
+
+   
 });
 
 
@@ -40,3 +44,20 @@ let swiper = new Swiper('.mySwiper', {
     autoHeight: true,
     loop: true,
 });
+
+(function () {
+    const burger = document.querySelector('.burger-menu');
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('burger_active');
+    });
+}())
+
+
+function barFunction() {
+    var x = document.getElementById("navLinks");
+    if (x.style.display === "block") {
+    x.style.display = "none";
+    } else {
+    x.style.display = "block";
+    }
+  }

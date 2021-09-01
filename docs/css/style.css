@@ -534,7 +534,7 @@ body {
   cursor: pointer;
 }
 
-.burger-menu {
+.navigation-container .wrapper {
   display: none;
 }
 
@@ -692,19 +692,20 @@ body {
 .space-logotip {
   text-align: center;
   width: 100%;
-  padding: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 0 30px 0;
 }
 
 .slider-wrapper {
   background-image: url("../img/sviper1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
 
 .gallery__box {
   max-width: 1220px;
+  height: 85vh;
   margin-left: auto;
   margin-right: auto;
   -webkit-box-sizing: border-box;
@@ -1634,13 +1635,14 @@ body {
 .swiper-cont {
   position: relative;
   height: 230px;
-  width: 83%;
+  width: 95%;
   text-align: center;
   max-width: 1220px;
   margin-left: auto;
   margin-right: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow: hidden;
 }
 
 .citation-slide p {
@@ -1671,7 +1673,7 @@ body {
 
 .citation-slider .swiper-pagination {
   position: absolute;
-  top: 93%;
+  top: 85%;
 }
 
 .citation-slider .swiper-pagination-bullet {
@@ -2038,105 +2040,120 @@ body {
     display: contents;
   }
 
+  .burger-menu {
+    width: 180px;
+    height: 120px;
+    cursor: pointer;
+  }
+
   .navigation-container .navigation {
     display: none;
   }
 
-  #menu__toggle {
-    opacity: 0;
+  .navigation-container .wrapper {
+    display: block;
+    margin: auto;
+    width: 360px;
+    background-color: transparent;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    height: 47px;
+    z-index: 10;
   }
 
-  .burger-menu .menu__btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    position: absolute;
-    top: 3%;
-    right: 8%;
-    width: 21px;
-    height: 25px;
-    cursor: pointer;
-    z-index: 1;
+  #check-menu {
+    display: none;
   }
 
-  .burger-menu .menu__btn > span,
-  .burger-menu .menu__btn > span::before,
-  .burger-menu .menu__btn > span::after {
+  label {
     display: block;
     position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #e4bb7a;
-  }
-
-  .burger-menu .menu__btn > span::before {
-    content: '';
-    top: -8px;
-  }
-
-  .burger-menu .menu__btn > span::after {
-    content: '';
-    top: 8px;
-  }
-
-  .menu__box {
-    display: block;
-    position: fixed;
-    visibility: hidden;
     top: 0;
     left: 0;
     width: 100%;
-    height: 36%;
-    margin: 0;
-    padding: 26px 0px;
-    list-style: none;
-    text-align: center;
-    background-color: #3f3f3f;
-    -webkit-box-shadow: 1px 0 6px #00000033;
-            box-shadow: 1px 0 6px #00000033;
-    z-index: 101;
+    height: 100%;
+    cursor: pointer;
+    z-index: 10;
+    line-height: 40px;
   }
 
-  .menu__item {
-    display: block;
-    padding: 10px 24px;
-    color: #e4bb7a;
-    font-size: 17px;
-    font-weight: 600;
-    text-decoration: none;
-    text-transform: capitalize;
-  }
-
-  .menu__item:hover {
+  .wrapper .burger-line {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    width: 30px;
+    height: 2px;
     background-color: #fff;
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    transition: .5s all;
   }
 
-  #menu__toggle:checked ~ .menu__btn > span {
+  .wrapper .second {
+    top: 12px;
+  }
+
+  .wrapper .third {
+    top: 12px;
+  }
+
+  .wrapper .fourth {
+    top: 22px;
+  }
+
+  .main-menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+            transform: translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    -webkit-transition: .5s all;
+    -o-transition: .5s all;
+    transition: .5s all;
+    cursor: pointer;
+  }
+
+  .main-menu a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-top: 1px solid #3f3f3f;
+    background-color: #000;
+    text-transform: uppercase;
+  }
+
+  #check-menu:checked ~ .main-menu {
+    max-height: 500px;
+    font-size: 16px;
+  }
+
+  #check-menu:checked ~ .first {
+    display: none;
+  }
+
+  #check-menu:checked ~ .second {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
   }
 
-  #menu__toggle:checked ~ .menu__btn > span::before {
-    top: 0;
-    -webkit-transform: rotate(0);
-        -ms-transform: rotate(0);
-            transform: rotate(0);
+  #check-menu:checked ~ .third {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
   }
 
-  #menu__toggle:checked ~ .menu__btn > span::after {
-    top: 0;
-    -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
-
-  #menu__toggle:checked ~ .menu__box {
-    visibility: visible;
-    top: 13%;
+  #check-menu:checked ~ .fourth {
+    display: none;
   }
 
   .maps {
@@ -2198,6 +2215,10 @@ body {
   .space-logotip {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+
+  .gallery__box {
+    margin-top: 35px;
   }
 
   .gallery__title2 {
@@ -2355,7 +2376,7 @@ body {
   }
 
   .dinner-lunch {
-    padding: 7px;
+    padding: 8px;
   }
 
   .working-hours h5,
@@ -2399,8 +2420,8 @@ body {
   }
 
   .staff .photo {
-    width: 66%;
-    height: 240px;
+    width: 60%;
+    height: 50%;
   }
 
   .chefs-names h5 {
@@ -2559,6 +2580,10 @@ body {
 
   .scroll-down {
     margin-bottom: 13px;
+  }
+
+  .navigation-container .wrapper {
+    width: 320px;
   }
 
   .gallery__box {
